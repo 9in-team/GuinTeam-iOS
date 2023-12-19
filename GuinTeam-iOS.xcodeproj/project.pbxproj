@@ -13,6 +13,15 @@
 		39FB8CED2B31D603004CB22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8CEC2B31D603004CB22B /* Assets.xcassets */; };
 		39FB8CF02B31D603004CB22B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8CEE2B31D603004CB22B /* LaunchScreen.storyboard */; };
 		39FB8CF82B31D78E004CB22B /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8CF72B31D78E004CB22B /* .gitignore */; };
+		39FB8CFD2B31D9BB004CB22B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 39FB8CFC2B31D9BB004CB22B /* SnapKit */; };
+		39FB8D182B31DB72004CB22B /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 39FB8D172B31DB72004CB22B /* RxBlocking */; };
+		39FB8D1A2B31DB72004CB22B /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 39FB8D192B31DB72004CB22B /* RxCocoa */; };
+		39FB8D1C2B31DB72004CB22B /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 39FB8D1B2B31DB72004CB22B /* RxRelay */; };
+		39FB8D1E2B31DB72004CB22B /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 39FB8D1D2B31DB72004CB22B /* RxSwift */; };
+		39FB8D202B31DB72004CB22B /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = 39FB8D1F2B31DB72004CB22B /* RxTest */; };
+		39FB8D232B31DE38004CB22B /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 39FB8D222B31DE38004CB22B /* Then */; };
+		39FB8D262B31DE59004CB22B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 39FB8D252B31DE59004CB22B /* Alamofire */; };
+		39FB8D292B31DEAD004CB22B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 39FB8D282B31DEAD004CB22B /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +40,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FB8D1A2B31DB72004CB22B /* RxCocoa in Frameworks */,
+				39FB8D262B31DE59004CB22B /* Alamofire in Frameworks */,
+				39FB8CFD2B31D9BB004CB22B /* SnapKit in Frameworks */,
+				39FB8D1E2B31DB72004CB22B /* RxSwift in Frameworks */,
+				39FB8D232B31DE38004CB22B /* Then in Frameworks */,
+				39FB8D1C2B31DB72004CB22B /* RxRelay in Frameworks */,
+				39FB8D292B31DEAD004CB22B /* SDWebImage in Frameworks */,
+				39FB8D202B31DB72004CB22B /* RxTest in Frameworks */,
+				39FB8D182B31DB72004CB22B /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +101,17 @@
 			dependencies = (
 			);
 			name = "GuinTeam-iOS";
+			packageProductDependencies = (
+				39FB8CFC2B31D9BB004CB22B /* SnapKit */,
+				39FB8D172B31DB72004CB22B /* RxBlocking */,
+				39FB8D192B31DB72004CB22B /* RxCocoa */,
+				39FB8D1B2B31DB72004CB22B /* RxRelay */,
+				39FB8D1D2B31DB72004CB22B /* RxSwift */,
+				39FB8D1F2B31DB72004CB22B /* RxTest */,
+				39FB8D222B31DE38004CB22B /* Then */,
+				39FB8D252B31DE59004CB22B /* Alamofire */,
+				39FB8D282B31DEAD004CB22B /* SDWebImage */,
+			);
 			productName = "GuinTeam-iOS";
 			productReference = 39FB8CE02B31D602004CB22B /* GuinTeam-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +141,13 @@
 				ko,
 			);
 			mainGroup = 39FB8CD72B31D602004CB22B;
+			packageReferences = (
+				39FB8CFB2B31D9BB004CB22B /* XCRemoteSwiftPackageReference "SnapKit" */,
+				39FB8D162B31DB72004CB22B /* XCRemoteSwiftPackageReference "RxSwift" */,
+				39FB8D212B31DE38004CB22B /* XCRemoteSwiftPackageReference "Then" */,
+				39FB8D242B31DE59004CB22B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				39FB8D272B31DEAD004CB22B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 39FB8CE12B31D602004CB22B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -197,6 +233,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -261,6 +298,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -374,6 +412,97 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39FB8CFB2B31D9BB004CB22B /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		39FB8D162B31DB72004CB22B /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 6.6.0;
+			};
+		};
+		39FB8D212B31DE38004CB22B /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:devxoul/Then.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		39FB8D242B31DE59004CB22B /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+		39FB8D272B31DEAD004CB22B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.18.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39FB8CFC2B31D9BB004CB22B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FB8CFB2B31D9BB004CB22B /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		39FB8D172B31DB72004CB22B /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FB8D162B31DB72004CB22B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		39FB8D192B31DB72004CB22B /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FB8D162B31DB72004CB22B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		39FB8D1B2B31DB72004CB22B /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FB8D162B31DB72004CB22B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		39FB8D1D2B31DB72004CB22B /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FB8D162B31DB72004CB22B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		39FB8D1F2B31DB72004CB22B /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FB8D162B31DB72004CB22B /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+		39FB8D222B31DE38004CB22B /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FB8D212B31DE38004CB22B /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+		39FB8D252B31DE59004CB22B /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FB8D242B31DE59004CB22B /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		39FB8D282B31DEAD004CB22B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39FB8D272B31DEAD004CB22B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 39FB8CD82B31D602004CB22B /* Project object */;
 }
