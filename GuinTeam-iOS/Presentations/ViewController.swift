@@ -15,3 +15,21 @@ class ViewController: UIViewController {
     }
 
 }
+
+// MARK: - Preview
+#if DEBUG
+import SwiftUI
+
+struct ViewController_Previews: PreviewProvider {
+    
+    static let viewController = ViewController()
+    // static let viewModel = ViewModel()
+    
+    static var previews: some View {
+        UIViewControllerPreview {
+            viewController
+        }
+        .ignoresSafeArea()
+    }
+}
+#endif
