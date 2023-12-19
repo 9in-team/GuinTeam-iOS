@@ -25,6 +25,7 @@
 		39FB8D2C2B31E0F0004CB22B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8D2B2B31E0F0004CB22B /* .swiftlint.yml */; };
 		39FB8D392B31E6B9004CB22B /* UIViewControllerPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8D382B31E6B9004CB22B /* UIViewControllerPreview.swift */; };
 		39FB8D3B2B31E6CE004CB22B /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8D3A2B31E6CE004CB22B /* UIViewPreview.swift */; };
+		39FB8D3D2B31E78B004CB22B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8D3C2B31E78B004CB22B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		39FB8D2B2B31E0F0004CB22B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		39FB8D382B31E6B9004CB22B /* UIViewControllerPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerPreview.swift; sourceTree = "<group>"; };
 		39FB8D3A2B31E6CE004CB22B /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
+		39FB8D3C2B31E78B004CB22B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		39FB8CD72B31D602004CB22B = {
 			isa = PBXGroup;
 			children = (
+				39FB8D3C2B31E78B004CB22B /* README.md */,
 				39FB8D2B2B31E0F0004CB22B /* .swiftlint.yml */,
 				39FB8CF72B31D78E004CB22B /* .gitignore */,
 				39FB8CE22B31D602004CB22B /* GuinTeam-iOS */,
@@ -214,6 +217,7 @@
 			files = (
 				39FB8D2C2B31E0F0004CB22B /* .swiftlint.yml in Resources */,
 				39FB8CF82B31D78E004CB22B /* .gitignore in Resources */,
+				39FB8D3D2B31E78B004CB22B /* README.md in Resources */,
 				39FB8CF02B31D603004CB22B /* LaunchScreen.storyboard in Resources */,
 				39FB8CED2B31D603004CB22B /* Assets.xcassets in Resources */,
 			);
