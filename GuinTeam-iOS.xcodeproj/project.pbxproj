@@ -80,12 +80,44 @@
 			children = (
 				39FB8CE32B31D602004CB22B /* AppDelegate.swift */,
 				39FB8CE52B31D602004CB22B /* SceneDelegate.swift */,
-				39FB8CE72B31D602004CB22B /* ViewController.swift */,
-				39FB8CEC2B31D603004CB22B /* Assets.xcassets */,
+				39FB8D2D2B31E4DB004CB22B /* Presentations */,
+				39FB8D2E2B31E4E4004CB22B /* Utils */,
+				39FB8D2F2B31E4EE004CB22B /* Extensions */,
+				39FB8D312B31E52E004CB22B /* Resources */,
 				39FB8CEE2B31D603004CB22B /* LaunchScreen.storyboard */,
 				39FB8CF12B31D603004CB22B /* Info.plist */,
 			);
 			path = "GuinTeam-iOS";
+			sourceTree = "<group>";
+		};
+		39FB8D2D2B31E4DB004CB22B /* Presentations */ = {
+			isa = PBXGroup;
+			children = (
+				39FB8CE72B31D602004CB22B /* ViewController.swift */,
+			);
+			path = Presentations;
+			sourceTree = "<group>";
+		};
+		39FB8D2E2B31E4E4004CB22B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		39FB8D2F2B31E4EE004CB22B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		39FB8D312B31E52E004CB22B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39FB8CEC2B31D603004CB22B /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
