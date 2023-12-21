@@ -29,6 +29,15 @@
 		39FDF0052B33E95400C3C765 /* GuinTeam_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0042B33E95400C3C765 /* GuinTeam_Tests.swift */; };
 		39FDF0122B33E96500C3C765 /* GuinTeam_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0112B33E96500C3C765 /* GuinTeam_UITests.swift */; };
 		39FDF0142B33E96500C3C765 /* GuinTeam_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0132B33E96500C3C765 /* GuinTeam_UITestsLaunchTests.swift */; };
+		39FDF01C2B33EA9F00C3C765 /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF01B2B33EA9F00C3C765 /* ViewProtocol.swift */; };
+		39FDF01E2B33EC1400C3C765 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF01D2B33EC1400C3C765 /* BaseViewController.swift */; };
+		39FDF0202B33ED8800C3C765 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF01F2B33ED8800C3C765 /* ViewControllerProtocol.swift */; };
+		39FDF0222B33EE1300C3C765 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0212B33EE1300C3C765 /* BaseViewModel.swift */; };
+		39FDF0242B33EF9E00C3C765 /* UseDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0232B33EF9E00C3C765 /* UseDisposeBag.swift */; };
+		39FDF0272B33F06900C3C765 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0262B33F06900C3C765 /* BaseView.swift */; };
+		39FDF0292B33F44D00C3C765 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0282B33F44D00C3C765 /* ViewModelProtocol.swift */; };
+		39FDF02D2B33FF9800C3C765 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF02C2B33FF9800C3C765 /* ActivityIndicatorView.swift */; };
+		39FDF02F2B34058700C3C765 /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF02E2B34058700C3C765 /* AlertPresentable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +75,15 @@
 		39FDF00F2B33E96500C3C765 /* GuinTeam-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GuinTeam-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FDF0112B33E96500C3C765 /* GuinTeam_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuinTeam_UITests.swift; sourceTree = "<group>"; };
 		39FDF0132B33E96500C3C765 /* GuinTeam_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuinTeam_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		39FDF01B2B33EA9F00C3C765 /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		39FDF01D2B33EC1400C3C765 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		39FDF01F2B33ED8800C3C765 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
+		39FDF0212B33EE1300C3C765 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		39FDF0232B33EF9E00C3C765 /* UseDisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseDisposeBag.swift; sourceTree = "<group>"; };
+		39FDF0262B33F06900C3C765 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		39FDF0282B33F44D00C3C765 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		39FDF02C2B33FF9800C3C765 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		39FDF02E2B34058700C3C765 /* AlertPresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				39FB8D412B31EEC0004CB22B /* MainViewController.swift */,
+				39FDF01A2B33EA9800C3C765 /* Base */,
 			);
 			path = Presentations;
 			sourceTree = "<group>";
@@ -195,6 +214,30 @@
 				39FDF0132B33E96500C3C765 /* GuinTeam_UITestsLaunchTests.swift */,
 			);
 			path = "GuinTeam-UITests";
+			sourceTree = "<group>";
+		};
+		39FDF01A2B33EA9800C3C765 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				39FDF0252B33EFE200C3C765 /* Protocols */,
+				39FDF01D2B33EC1400C3C765 /* BaseViewController.swift */,
+				39FDF0212B33EE1300C3C765 /* BaseViewModel.swift */,
+				39FDF0262B33F06900C3C765 /* BaseView.swift */,
+				39FDF02C2B33FF9800C3C765 /* ActivityIndicatorView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		39FDF0252B33EFE200C3C765 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				39FDF01F2B33ED8800C3C765 /* ViewControllerProtocol.swift */,
+				39FDF01B2B33EA9F00C3C765 /* ViewProtocol.swift */,
+				39FDF0282B33F44D00C3C765 /* ViewModelProtocol.swift */,
+				39FDF02E2B34058700C3C765 /* AlertPresentable.swift */,
+				39FDF0232B33EF9E00C3C765 /* UseDisposeBag.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,10 +414,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39FDF0202B33ED8800C3C765 /* ViewControllerProtocol.swift in Sources */,
 				39FB8D3B2B31E6CE004CB22B /* UIViewPreview.swift in Sources */,
 				39FB8CE42B31D602004CB22B /* AppDelegate.swift in Sources */,
+				39FDF01C2B33EA9F00C3C765 /* ViewProtocol.swift in Sources */,
+				39FDF02F2B34058700C3C765 /* AlertPresentable.swift in Sources */,
 				39FB8CE62B31D602004CB22B /* SceneDelegate.swift in Sources */,
+				39FDF0242B33EF9E00C3C765 /* UseDisposeBag.swift in Sources */,
+				39FDF0222B33EE1300C3C765 /* BaseViewModel.swift in Sources */,
 				39FB8D422B31EEC0004CB22B /* MainViewController.swift in Sources */,
+				39FDF0292B33F44D00C3C765 /* ViewModelProtocol.swift in Sources */,
+				39FDF01E2B33EC1400C3C765 /* BaseViewController.swift in Sources */,
+				39FDF0272B33F06900C3C765 /* BaseView.swift in Sources */,
+				39FDF02D2B33FF9800C3C765 /* ActivityIndicatorView.swift in Sources */,
 				39FB8D392B31E6B9004CB22B /* UIViewControllerPreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

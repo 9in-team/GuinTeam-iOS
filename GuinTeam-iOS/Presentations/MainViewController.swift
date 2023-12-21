@@ -9,18 +9,13 @@ import UIKit
 import SnapKit
 import RxSwift
 
-final class MainViewController: UIViewController {
+final class MainViewController: BaseViewController, ViewControllerProtocol {
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        layout()
-    }
-    
-    private func layout() {
+    func configure() {
         
     }
     
-    private func bind() {
+    func layout() {
         
     }
     
