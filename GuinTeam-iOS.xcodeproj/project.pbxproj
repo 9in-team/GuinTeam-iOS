@@ -26,7 +26,27 @@
 		39FB8D3B2B31E6CE004CB22B /* UIViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8D3A2B31E6CE004CB22B /* UIViewPreview.swift */; };
 		39FB8D3D2B31E78B004CB22B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8D3C2B31E78B004CB22B /* README.md */; };
 		39FB8D422B31EEC0004CB22B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8D412B31EEC0004CB22B /* MainViewController.swift */; };
+		39FDF0052B33E95400C3C765 /* GuinTeam_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0042B33E95400C3C765 /* GuinTeam_Tests.swift */; };
+		39FDF0122B33E96500C3C765 /* GuinTeam_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0112B33E96500C3C765 /* GuinTeam_UITests.swift */; };
+		39FDF0142B33E96500C3C765 /* GuinTeam_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0132B33E96500C3C765 /* GuinTeam_UITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		39FDF0062B33E95400C3C765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39FB8CD82B31D602004CB22B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39FB8CDF2B31D602004CB22B;
+			remoteInfo = "GuinTeam-iOS";
+		};
+		39FDF0152B33E96500C3C765 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39FB8CD82B31D602004CB22B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 39FB8CDF2B31D602004CB22B;
+			remoteInfo = "GuinTeam-iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		39FB8CE02B31D602004CB22B /* GuinTeam-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuinTeam-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +61,11 @@
 		39FB8D3A2B31E6CE004CB22B /* UIViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewPreview.swift; sourceTree = "<group>"; };
 		39FB8D3C2B31E78B004CB22B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		39FB8D412B31EEC0004CB22B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		39FDF0022B33E95400C3C765 /* GuinTeam-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GuinTeam-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39FDF0042B33E95400C3C765 /* GuinTeam_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuinTeam_Tests.swift; sourceTree = "<group>"; };
+		39FDF00F2B33E96500C3C765 /* GuinTeam-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GuinTeam-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39FDF0112B33E96500C3C765 /* GuinTeam_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuinTeam_UITests.swift; sourceTree = "<group>"; };
+		39FDF0132B33E96500C3C765 /* GuinTeam_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuinTeam_UITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +85,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39FDEFFF2B33E95400C3C765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39FDF00C2B33E96500C3C765 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -70,6 +109,8 @@
 				39FB8D2B2B31E0F0004CB22B /* .swiftlint.yml */,
 				39FB8CF72B31D78E004CB22B /* .gitignore */,
 				39FB8CE22B31D602004CB22B /* GuinTeam-iOS */,
+				39FDF0032B33E95400C3C765 /* GuinTeam-Tests */,
+				39FDF0102B33E96500C3C765 /* GuinTeam-UITests */,
 				39FB8CE12B31D602004CB22B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				39FB8CE02B31D602004CB22B /* GuinTeam-iOS.app */,
+				39FDF0022B33E95400C3C765 /* GuinTeam-Tests.xctest */,
+				39FDF00F2B33E96500C3C765 /* GuinTeam-UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +180,23 @@
 			path = Preview;
 			sourceTree = "<group>";
 		};
+		39FDF0032B33E95400C3C765 /* GuinTeam-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				39FDF0042B33E95400C3C765 /* GuinTeam_Tests.swift */,
+			);
+			path = "GuinTeam-Tests";
+			sourceTree = "<group>";
+		};
+		39FDF0102B33E96500C3C765 /* GuinTeam-UITests */ = {
+			isa = PBXGroup;
+			children = (
+				39FDF0112B33E96500C3C765 /* GuinTeam_UITests.swift */,
+				39FDF0132B33E96500C3C765 /* GuinTeam_UITestsLaunchTests.swift */,
+			);
+			path = "GuinTeam-UITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -169,6 +229,42 @@
 			productReference = 39FB8CE02B31D602004CB22B /* GuinTeam-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
+		39FDF0012B33E95400C3C765 /* GuinTeam-Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39FDF0082B33E95400C3C765 /* Build configuration list for PBXNativeTarget "GuinTeam-Tests" */;
+			buildPhases = (
+				39FDEFFE2B33E95400C3C765 /* Sources */,
+				39FDEFFF2B33E95400C3C765 /* Frameworks */,
+				39FDF0002B33E95400C3C765 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39FDF0072B33E95400C3C765 /* PBXTargetDependency */,
+			);
+			name = "GuinTeam-Tests";
+			productName = "GuinTeam-Tests";
+			productReference = 39FDF0022B33E95400C3C765 /* GuinTeam-Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		39FDF00E2B33E96500C3C765 /* GuinTeam-UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39FDF0172B33E96500C3C765 /* Build configuration list for PBXNativeTarget "GuinTeam-UITests" */;
+			buildPhases = (
+				39FDF00B2B33E96500C3C765 /* Sources */,
+				39FDF00C2B33E96500C3C765 /* Frameworks */,
+				39FDF00D2B33E96500C3C765 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				39FDF0162B33E96500C3C765 /* PBXTargetDependency */,
+			);
+			name = "GuinTeam-UITests";
+			productName = "GuinTeam-UITests";
+			productReference = 39FDF00F2B33E96500C3C765 /* GuinTeam-UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +277,14 @@
 				TargetAttributes = {
 					39FB8CDF2B31D602004CB22B = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					39FDF0012B33E95400C3C765 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 39FB8CDF2B31D602004CB22B;
+					};
+					39FDF00E2B33E96500C3C765 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 39FB8CDF2B31D602004CB22B;
 					};
 				};
 			};
@@ -206,6 +310,8 @@
 			projectRoot = "";
 			targets = (
 				39FB8CDF2B31D602004CB22B /* GuinTeam-iOS */,
+				39FDF0012B33E95400C3C765 /* GuinTeam-Tests */,
+				39FDF00E2B33E96500C3C765 /* GuinTeam-UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -220,6 +326,20 @@
 				39FB8D3D2B31E78B004CB22B /* README.md in Resources */,
 				39FB8CF02B31D603004CB22B /* LaunchScreen.storyboard in Resources */,
 				39FB8CED2B31D603004CB22B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39FDF0002B33E95400C3C765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39FDF00D2B33E96500C3C765 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +379,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		39FDEFFE2B33E95400C3C765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39FDF0052B33E95400C3C765 /* GuinTeam_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		39FDF00B2B33E96500C3C765 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39FDF0142B33E96500C3C765 /* GuinTeam_UITestsLaunchTests.swift in Sources */,
+				39FDF0122B33E96500C3C765 /* GuinTeam_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		39FDF0072B33E95400C3C765 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39FB8CDF2B31D602004CB22B /* GuinTeam-iOS */;
+			targetProxy = 39FDF0062B33E95400C3C765 /* PBXContainerItemProxy */;
+		};
+		39FDF0162B33E96500C3C765 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 39FB8CDF2B31D602004CB22B /* GuinTeam-iOS */;
+			targetProxy = 39FDF0152B33E96500C3C765 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		39FB8CEE2B31D603004CB22B /* LaunchScreen.storyboard */ = {
@@ -470,6 +620,92 @@
 			};
 			name = Release;
 		};
+		39FDF0092B33E95400C3C765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZH5GA3W8UP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guin.GuinTeam-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuinTeam-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuinTeam-iOS";
+			};
+			name = Debug;
+		};
+		39FDF00A2B33E95400C3C765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZH5GA3W8UP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guin.GuinTeam-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuinTeam-iOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuinTeam-iOS";
+			};
+			name = Release;
+		};
+		39FDF0182B33E96500C3C765 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZH5GA3W8UP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guin.GuinTeam-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = "GuinTeam-iOS";
+			};
+			name = Debug;
+		};
+		39FDF0192B33E96500C3C765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZH5GA3W8UP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.guin.GuinTeam-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = "GuinTeam-iOS";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -487,6 +723,24 @@
 			buildConfigurations = (
 				39FB8CF52B31D603004CB22B /* Debug */,
 				39FB8CF62B31D603004CB22B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39FDF0082B33E95400C3C765 /* Build configuration list for PBXNativeTarget "GuinTeam-Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39FDF0092B33E95400C3C765 /* Debug */,
+				39FDF00A2B33E95400C3C765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39FDF0172B33E96500C3C765 /* Build configuration list for PBXNativeTarget "GuinTeam-UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39FDF0182B33E96500C3C765 /* Debug */,
+				39FDF0192B33E96500C3C765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
