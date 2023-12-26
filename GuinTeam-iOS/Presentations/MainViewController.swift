@@ -9,14 +9,6 @@ import UIKit
 import SnapKit
 import RxSwift
 
-final class MainViewController: BaseViewController, ViewControllerProtocol {
-    
-    func configure() {
-        
-    }
-    
-    func layout() {
-        
-    }
+final class MainViewController: BaseViewController {
     
 }
