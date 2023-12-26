@@ -9,9 +9,9 @@ import UIKit
 import SnapKit
 import RxSwift
 
-class BaseView<VM: BaseViewModel>: UIView {
+class BaseView: UIView {
     
-    var indicatorView: ActivityIndicatorView = .init(style: .medium)
+    lazy var indicatorView: ActivityIndicatorView = .init(style: .medium)
     var disposeBag = DisposeBag()
     
     private let contentView = UIView()
