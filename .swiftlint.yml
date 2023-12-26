@@ -28,11 +28,6 @@ identifier_name:
     error: 2 # only error
   excluded: # excluded via string array
     - id
-    - URL
     - x
     - y
     - vc
-    - sv
-    - iv
-    - nc
-    - cv
