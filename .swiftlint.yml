@@ -1,3 +1,5 @@
+
+## 비활성화
 disabled_rules: # Default Rules에서 비활성화할 규칙
     # 라인 뒤에 공백이 없어야 합니다. https://realm.github.io/SwiftLint/trailing_whitespace.html
     - trailing_whitespace
@@ -7,7 +9,8 @@ disabled_rules: # Default Rules에서 비활성화할 규칙
     
     # 강제 언래핑은 피해야합니다. https://realm.github.io/SwiftLint/force_unwrapping.html
     - force_unwrapping
-    
+
+## 옵션
 opt_in_rules:
   # .count==0 보다는 .isEmpty를 사용하는 것이 좋습니다. https://realm.github.io/SwiftLint/empty_count.html
   - empty_count
@@ -15,5 +18,21 @@ opt_in_rules:
   # 빈 String 문자열과 비교하는 것 보다는 .isEmpty를 사용하는 것이 좋습니다. https://realm.github.io/SwiftLint/empty_string.html
   - empty_string
   
+## 제외
 excluded: # SwiftLint 검사에서 제외할 파일 경로
   - Pods
+
+## 재정의 규칙
+identifier_name:
+  min_length: # only min_length
+    error: 2 # only error
+  excluded: # excluded via string array
+    - id
+    - URL
+    - x
+    - y
+    - vc
+    - sv
+    - iv
+    - nc
+    - cv
