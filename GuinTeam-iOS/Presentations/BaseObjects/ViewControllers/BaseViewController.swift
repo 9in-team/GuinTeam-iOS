@@ -11,7 +11,8 @@ import RxSwift
 
 class BaseViewController: UIViewController {
     
-    var disposeBag = DisposeBag()
+    lazy var disposeBag = DisposeBag()
+    
     private let messageView = MessageView()
 
     // MARK: - Init

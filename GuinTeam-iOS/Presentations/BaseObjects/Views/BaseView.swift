@@ -12,10 +12,11 @@ import RxSwift
 class BaseView<VM: BaseViewModel>: UIView {
     
     let viewModel: VM
-    lazy var activityIndicator: ActivityIndicatorView = .init(style: .medium)
-    var disposeBag = DisposeBag()
     
-    private let contentView = UIView()
+    lazy var activityIndicator: ActivityIndicatorView = .init(style: .medium)
+    lazy var disposeBag = DisposeBag()
+    
+    let contentView = UIView()
 
     // MARK: - Init
     init(viewModel: VM, 
