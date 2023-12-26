@@ -9,17 +9,22 @@ import UIKit
 import SnapKit
 import RxSwift
 
-class BaseView: UIView {
+class BaseView<VM: BaseViewModel>: UIView {
     
-    lazy var indicatorView: ActivityIndicatorView = .init(style: .medium)
+    let viewModel: VM
+    lazy var activityIndicator: ActivityIndicatorView = .init(style: .medium)
     var disposeBag = DisposeBag()
     
     private let contentView = UIView()
 
     // MARK: - Init
-    init(backgroundColor: UIColor = .systemBackground) {
+    init(viewModel: VM, 
+         backgroundColor: UIColor = .systemBackground,
+         withActivityIndicator: Bool = false) {
+        self.viewModel = viewModel
         super.init(frame: .zero)
         setBackgroungColor(backgroundColor)
+        layoutContentView()
     }
     
     required init?(coder: NSCoder) {
@@ -27,11 +32,6 @@ class BaseView: UIView {
     }
 
     // MARK: - Configures
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        layoutContentView()
-    }
-    
     func setBackgroungColor(_ color: UIColor) {
         self.contentView.backgroundColor = color
     }
@@ -45,27 +45,35 @@ class BaseView: UIView {
         }
     }
     
-    // MARK: - Activity Indicator Methods
-    /// 컨텐츠 로딩 상태에 따라 Indicator의 상태를 조절합니다.
-    /// setActivityIndicator() 가 호출 되어야 화면에 표시 됩니다.
-    func observeLoadingState(isPresent: BehaviorSubject<Bool>) {
-        isPresent
-            .observe(on: MainScheduler.instance)
-            .subscribe { isPresent in
-                isPresent
-                ? self.indicatorView.show()
-                : self.indicatorView.hide()
-            }
-            .disposed(by: disposeBag)
+    private func setContentViewInset() {
+        self.addSubview(contentView)
+        self.contentView.snp.makeConstraints { make in
+            make.edges.equalTo(self)
+        }
     }
     
+    // MARK: - Activity Indicator Methods
     /// Activity Indicator를 TargetView의 중앙에 위치시킵니다.
     /// observeLoadingState(isPresent:) 로 State를 관찰합니다.
     func setActivityIndicator() {
-        contentView.addSubview(indicatorView)
-        indicatorView.snp.makeConstraints { make in
+        contentView.addSubview(activityIndicator)
+        activityIndicator.snp.makeConstraints { make in
             make.center.equalTo(contentView)
         }
+        observeLoadingState()
+    }
+    
+    /// 컨텐츠 로딩 상태에 따라 Indicator의 상태를 조절합니다.
+    /// setActivityIndicator() 가 호출 되어야 화면에 표시 됩니다.
+    private func observeLoadingState() {
+        viewModel.isLoading
+            .observe(on: MainScheduler.instance)
+            .subscribe { isPresent in
+                isPresent
+                ? self.activityIndicator.show()
+                : self.activityIndicator.hide()
+            }
+            .disposed(by: disposeBag)
     }
     
 }
