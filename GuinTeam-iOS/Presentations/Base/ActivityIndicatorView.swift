@@ -9,16 +9,27 @@ import UIKit
 
 final class ActivityIndicatorView: UIActivityIndicatorView {
 
-    init(color: UIColor = .secondaryLabel, 
+    // MARK: - Init
+    init(color: UIColor = .secondaryLabel,
          style: UIActivityIndicatorView.Style) {
         super.init(style: style)
         setColor(color: color)
+        configure()
     }
     
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Configure
+    private func configure() {
+        self.hidesWhenStopped = true
+    }
+    
+    public func setBackgroundColor(color: UIColor) {
+        self.backgroundColor = color
+    }
+
     /// Indicator의 색상을 셋업합니다.
     func setColor(color: UIColor) {
         self.tintColor = color
@@ -32,7 +43,6 @@ final class ActivityIndicatorView: UIActivityIndicatorView {
     
     /// Indicator를 숨깁니다.
     func hide() {
-        self.isHidden = true
         self.stopAnimating()
     }
     
