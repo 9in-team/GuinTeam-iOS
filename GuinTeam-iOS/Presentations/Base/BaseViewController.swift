@@ -16,6 +16,7 @@ class BaseViewController: UIViewController, UseDisposeBag {
     init(backgroundColor: UIColor = .systemBackground) {
         super.init(nibName: nil, bundle: nil)
         setBackgroundColor(backgroundColor)
+        assignTextfieldHideKeyboardGesture()
     }
     
     required init?(coder: NSCoder) {
@@ -24,6 +25,18 @@ class BaseViewController: UIViewController, UseDisposeBag {
     
     func setBackgroundColor(_ color: UIColor) {
         self.view.backgroundColor = color
+    }
+    
+    /// TextField 키보드 dismiss Gesture 등록
+    private func assignTextfieldHideKeyboardGesture() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(textFieldHideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+        view.backgroundColor = .systemBackground
+    }
+    
+    /// TextField 키보드 dismiss
+    @objc func textFieldHideKeyboard() {
+        view.endEditing(true)
     }
 
 }
