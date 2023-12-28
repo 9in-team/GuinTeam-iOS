@@ -1,5 +1,5 @@
 //
-//  UIViewControllerPreview.swift
+//  Preview.swift
 //  GuinTeam-iOS
 //
 //  Created by HeonJin Ha on 12/19/23.

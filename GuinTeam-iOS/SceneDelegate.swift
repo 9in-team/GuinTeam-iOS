@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         window?.backgroundColor = .systemBackground
         
-        let rootVC = MainViewController()
+        let viewModel = ViewModel()
+        let rootVC = ViewController(viewModel: viewModel)
         
         window?.rootViewController = rootVC
         window?.makeKeyAndVisible()
