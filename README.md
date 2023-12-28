@@ -11,6 +11,11 @@
  - Alamofire
  - SDWebImage
  - Then
+ 
+ 
+## MVVM Rule
+ - InputOutput Pattern 사용 시 InputOutputProtocol을 채택한다.
+ - ViewController의 기능은 최소화 한다.
 
 
 ## Commit Rule

@@ -8,11 +8,10 @@
 import Foundation
 import RxSwift
 
-class BaseViewModel {
+class BaseViewModel: ViewModelProtocol {
     
     lazy var disposeBag = DisposeBag()
     
-    /// 비동기 Task 사용 시 사용
     lazy var isLoading = BehaviorSubject<Bool>(value: false)
-        
+    
 }
