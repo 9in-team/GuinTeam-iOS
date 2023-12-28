@@ -26,8 +26,6 @@ struct UIViewControllerPreview<ViewController: UIViewController>: UIViewControll
     }
 }
 
-import SwiftUI
-
 struct UIViewPreview<View: UIView>: UIViewRepresentable {
     let view: View
     
