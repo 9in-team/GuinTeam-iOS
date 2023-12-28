@@ -113,6 +113,8 @@ struct MainViewController_Previews: PreviewProvider {
             viewController
         }
         .ignoresSafeArea()
+        .allColorScheme(.lightModeFirst)
+        
     }
 }
 #endif

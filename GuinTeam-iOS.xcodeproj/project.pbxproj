@@ -206,7 +206,7 @@
 			children = (
 				39FB8CE32B31D602004CB22B /* AppDelegate.swift */,
 				39FB8CE52B31D602004CB22B /* SceneDelegate.swift */,
-				39FB8D2D2B31E4DB004CB22B /* Presentations */,
+				39FB8D2D2B31E4DB004CB22B /* Main */,
 				39FDF01A2B33EA9800C3C765 /* Base */,
 				39FB8D2E2B31E4E4004CB22B /* Utils */,
 				3951E60A2B3AC36200D1A424 /* Test */,
@@ -218,14 +218,14 @@
 			path = "GuinTeam-iOS";
 			sourceTree = "<group>";
 		};
-		39FB8D2D2B31E4DB004CB22B /* Presentations */ = {
+		39FB8D2D2B31E4DB004CB22B /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				39FB8D412B31EEC0004CB22B /* ViewController.swift */,
 				394A16B92B3DA38900875A02 /* ViewModel.swift */,
 				3951E61B2B3AC9B700D1A424 /* CustomViews */,
 			);
-			path = Presentations;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		39FB8D2E2B31E4E4004CB22B /* Utils */ = {
