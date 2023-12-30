@@ -11,6 +11,6 @@ protocol ExampleProtocol {
     
     associatedtype Example
     
-    static var example: Example { get set }
+    static var examples: [Example] { get set }
     
 }

@@ -22,12 +22,21 @@ opt_in_rules:
 excluded: # SwiftLint 검사에서 제외할 파일 경로
   - Pods
 
-## 재정의 규칙
+
+## 이름 규칙
 identifier_name:
   min_length: # only min_length
-    error: 2 # only error
-  excluded: # excluded via string array
+    error: 2 # 2글자 초과 시 에러
+  excluded: # 예외
     - id
     - x
     - y
     - vc
+
+## 줄 길이 규칙
+line_length:
+  warning: 120 # 1줄에 120글자 이상이면 경고
+  error: 150 # 1줄에 150글자 이상이면 에러
+  ignores_function_declarations: true # 함수 선언에 대한 글자 수 제한을 무시
+  ignores_comments: true # 주석에 대한 글자 수 제한을 무시
+  ignores_urls: true # URL에 대한 글자 수 제한을 무시
