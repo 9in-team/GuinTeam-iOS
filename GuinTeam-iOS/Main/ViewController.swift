@@ -53,14 +53,18 @@ final class ViewController: BaseViewController {
     
     // MARK: - Setup
     override func layout() {
+        
         super.layout()
+        view.addSubview(label)
+        view.addSubview(resultLabel)
+        view.addSubview(button)
+
         layoutLabel()
         layoutResultLabel()
         layoutButton()
     }
     
     private func layoutLabel() {
-        view.addSubview(label)
         label.snp.makeConstraints { make in
             make.center.equalToSuperview()
             make.height.greaterThanOrEqualTo(40)
@@ -69,7 +73,6 @@ final class ViewController: BaseViewController {
     }
     
     private func layoutResultLabel() {
-        view.addSubview(resultLabel)
         resultLabel.snp.makeConstraints { make in
             make.centerX.equalTo(label)
             make.top.equalTo(label.snp.bottom).offset(20)
@@ -79,7 +82,6 @@ final class ViewController: BaseViewController {
     }
     
     private func layoutButton() {
-        view.addSubview(button)
         button.snp.makeConstraints { make in
             make.centerX.equalTo(resultLabel)
             make.top.equalTo(resultLabel.snp.bottom).offset(20)
