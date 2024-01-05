@@ -13,23 +13,23 @@ import Then
 final class ViewController: BaseViewController {
     
     private let label = UITextField()
-        .then { label in
-            label.text = "Hello World!"
-            label.textAlignment = .center
+        .then {
+            $0.text = "Hello World!"
+            $0.textAlignment = .center
         }
     
     private let resultLabel = UITextField()
-        .then { label in
-            label.text = ""
-            label.textAlignment = .center
-            label.font = .systemFont(ofSize: 18, weight: .bold)
+        .then {
+            $0.text = ""
+            $0.textAlignment = .center
+            $0.font = .systemFont(ofSize: 18, weight: .bold)
         }
     
     private let button = UIButton()
-        .then { button in
-            button.setTitle("Touch Me!", for: .normal)
-            button.backgroundColor = .systemBlue
-            button.setTitleColor(.white, for: .normal)
+        .then {
+            $0.setTitle("Touch Me!", for: .normal)
+            $0.backgroundColor = .systemBlue
+            $0.setTitleColor(.white, for: .normal)
         }
     
     private let viewModel: ViewModel
@@ -65,28 +65,28 @@ final class ViewController: BaseViewController {
     }
     
     private func layoutLabel() {
-        label.snp.makeConstraints { make in
-            make.center.equalToSuperview()
-            make.height.greaterThanOrEqualTo(40)
-            make.width.greaterThanOrEqualTo(100)
+        label.snp.makeConstraints {
+            $0.center.equalToSuperview()
+            $0.height.greaterThanOrEqualTo(40)
+            $0.width.greaterThanOrEqualTo(100)
         }
     }
     
     private func layoutResultLabel() {
-        resultLabel.snp.makeConstraints { make in
-            make.centerX.equalTo(label)
-            make.top.equalTo(label.snp.bottom).offset(20)
-            make.height.greaterThanOrEqualTo(40)
-            make.width.greaterThanOrEqualTo(100)
+        resultLabel.snp.makeConstraints {
+            $0.centerX.equalTo(label)
+            $0.top.equalTo(label.snp.bottom).offset(20)
+            $0.height.greaterThanOrEqualTo(40)
+            $0.width.greaterThanOrEqualTo(100)
         }
     }
     
     private func layoutButton() {
-        button.snp.makeConstraints { make in
-            make.centerX.equalTo(resultLabel)
-            make.top.equalTo(resultLabel.snp.bottom).offset(20)
-            make.height.greaterThanOrEqualTo(40)
-            make.width.greaterThanOrEqualTo(100)
+        button.snp.makeConstraints {
+            $0.centerX.equalTo(resultLabel)
+            $0.top.equalTo(resultLabel.snp.bottom).offset(20)
+            $0.height.greaterThanOrEqualTo(40)
+            $0.width.greaterThanOrEqualTo(100)
         }
     }
     
