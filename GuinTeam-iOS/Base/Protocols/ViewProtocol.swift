@@ -8,12 +8,10 @@
 import Foundation
 import RxSwift
 
-protocol ViewProtocol {
+protocol ViewProtocol: UISetupProtocol {
         
     var disposeBag: DisposeBag { get set }
     
-    func configure()
-    func layout()
     func observe()
     
 }

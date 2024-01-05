@@ -7,10 +7,8 @@
 
 import Foundation
 
-protocol ViewControllerProtocol {
+protocol ViewControllerProtocol: UISetupProtocol {
     
-    func configure()
-    func layout()
     func bind()
     func observe()
     
