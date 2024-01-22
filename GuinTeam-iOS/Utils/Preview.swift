@@ -8,20 +8,20 @@
 #if DEBUG && targetEnvironment(simulator)
 import SwiftUI
 
-struct UIViewControllerPreview<ViewController: UIViewController>: UIViewControllerRepresentable {
+struct UIViewControllerPreview<MainTabBarController: UIViewController>: UIViewControllerRepresentable {
     
-    let viewController: ViewController
+    let viewController: MainTabBarController
     
-    init(_ builder: @escaping () -> ViewController) {
+    init(_ builder: @escaping () -> MainTabBarController) {
         viewController = builder()
     }
     
     // MARK: - UIViewControllerRepresentable
-    func makeUIViewController(context: Context) -> ViewController {
+    func makeUIViewController(context: Context) -> MainTabBarController {
         viewController
     }
     
-    func updateUIViewController(_ uiViewController: ViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: MainTabBarController, context: Context) {
         
     }
 }

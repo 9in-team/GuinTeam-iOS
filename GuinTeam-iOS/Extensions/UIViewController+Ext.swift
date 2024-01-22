@@ -9,7 +9,13 @@ import UIKit
 
 extension UIViewController {
     
-    // MARK: NavigationController
+    // MARK: NavigationController    
+    /// ViewController를 present합니다.
+    func presentFullScreen(_ viewController: UIViewController, animated: Bool = true) {
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: animated)
+    }
+    
     /// ViewController를 push합니다.
     func push(_ viewController: UIViewController, animated: Bool = true) {
         self.navigationController?.pushViewController(viewController, animated: animated)
@@ -28,6 +34,12 @@ extension UIViewController {
     /// RootViewController를 제외한 Stack의 모든 ViewController를 Pop하고 디스플레이를 업데이트합니다.
     func popToRootViewController(animated: Bool = true) {
         self.navigationController?.popToRootViewController(animated: animated)
+    }
+    
+    /// TabBarItem setting
+    func setTabBarItem(title: String, image: UIImage?) {
+        tabBarItem.title = title
+        tabBarItem.image = image
     }
 
 }
