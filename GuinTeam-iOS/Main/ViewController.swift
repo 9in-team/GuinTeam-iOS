@@ -14,22 +14,25 @@ final class ViewController: BaseViewController {
     
     private let label = UITextField()
         .then {
-            $0.text = "Hello World!"
+            $0.text = "9in.team"
             $0.textAlignment = .center
+            $0.font = .custom(.godoB, size: 30) // Font Test
         }
     
     private let resultLabel = UITextField()
         .then {
-            $0.text = ""
+            $0.text = "not Tapped"
             $0.textAlignment = .center
-            $0.font = .systemFont(ofSize: 18, weight: .bold)
+            $0.font = .custom(.robotoBold, size: 14) // Font Test
         }
     
     private let button = UIButton()
         .then {
-            $0.setTitle("Touch Me!", for: .normal)
+            $0.setAttributedTitle(.init(string: "Touch Me!", 
+                                        attributes: [.font: UIFont.custom(.robotoMedium, size: 14)]), for: .normal)
             $0.backgroundColor = .systemBlue
             $0.setTitleColor(.white, for: .normal)
+            $0.layer.cornerRadius = 8
         }
     
     private let viewModel: ViewModel

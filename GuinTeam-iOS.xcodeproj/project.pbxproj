@@ -21,6 +21,12 @@
 		3951E6122B3AC49100D1A424 /* CALayer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E6112B3AC49100D1A424 /* CALayer+Ext.swift */; };
 		3951E6142B3AC4F500D1A424 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E6132B3AC4F500D1A424 /* UIView+Ext.swift */; };
 		3951E61A2B3AC98600D1A424 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E6192B3AC98600D1A424 /* MessageView.swift */; };
+		39BD53C62B664B6B00ACEFB2 /* FontConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD53C52B664B6B00ACEFB2 /* FontConstant.swift */; };
+		39BD53CA2B664C5600ACEFB2 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD53C92B664C5600ACEFB2 /* UIFont+Ext.swift */; };
+		39BD53D02B664D3500ACEFB2 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39BD53CC2B664D3500ACEFB2 /* Roboto-Bold.ttf */; };
+		39BD53D12B664D3500ACEFB2 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39BD53CD2B664D3500ACEFB2 /* Roboto-Regular.ttf */; };
+		39BD53D22B664D3500ACEFB2 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39BD53CE2B664D3500ACEFB2 /* Roboto-Medium.ttf */; };
+		39BD53D32B664D3500ACEFB2 /* GodoB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BD53CF2B664D3500ACEFB2 /* GodoB.otf */; };
 		39FB8CE42B31D602004CB22B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8CE32B31D602004CB22B /* AppDelegate.swift */; };
 		39FB8CE62B31D602004CB22B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8CE52B31D602004CB22B /* SceneDelegate.swift */; };
 		39FB8CED2B31D603004CB22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8CEC2B31D603004CB22B /* Assets.xcassets */; };
@@ -85,6 +91,12 @@
 		3951E6112B3AC49100D1A424 /* CALayer+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Ext.swift"; sourceTree = "<group>"; };
 		3951E6132B3AC4F500D1A424 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		3951E6192B3AC98600D1A424 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		39BD53C52B664B6B00ACEFB2 /* FontConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstant.swift; sourceTree = "<group>"; };
+		39BD53C92B664C5600ACEFB2 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
+		39BD53CC2B664D3500ACEFB2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		39BD53CD2B664D3500ACEFB2 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		39BD53CE2B664D3500ACEFB2 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		39BD53CF2B664D3500ACEFB2 /* GodoB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GodoB.otf; sourceTree = "<group>"; };
 		39FB8CE02B31D602004CB22B /* GuinTeam-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuinTeam-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FB8CE32B31D602004CB22B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FB8CE52B31D602004CB22B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,6 +207,17 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		39BD53CB2B664CCE00ACEFB2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				39BD53CF2B664D3500ACEFB2 /* GodoB.otf */,
+				39BD53CC2B664D3500ACEFB2 /* Roboto-Bold.ttf */,
+				39BD53CE2B664D3500ACEFB2 /* Roboto-Medium.ttf */,
+				39BD53CD2B664D3500ACEFB2 /* Roboto-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		39FB8CD72B31D602004CB22B = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +274,7 @@
 			children = (
 				39FB8D382B31E6B9004CB22B /* Preview.swift */,
 				39FCE2132B3FDF1000927D45 /* AFService.swift */,
+				39BD53C52B664B6B00ACEFB2 /* FontConstant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -262,6 +286,7 @@
 				3951E6112B3AC49100D1A424 /* CALayer+Ext.swift */,
 				3951E6132B3AC4F500D1A424 /* UIView+Ext.swift */,
 				394A16B72B3DA00000875A02 /* UIViewController+Ext.swift */,
+				39BD53C92B664C5600ACEFB2 /* UIFont+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -269,6 +294,7 @@
 		39FB8D312B31E52E004CB22B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				39BD53CB2B664CCE00ACEFB2 /* Fonts */,
 				39FB8CEC2B31D603004CB22B /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -439,8 +465,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39BD53D22B664D3500ACEFB2 /* Roboto-Medium.ttf in Resources */,
+				39BD53D32B664D3500ACEFB2 /* GodoB.otf in Resources */,
 				39FB8D2C2B31E0F0004CB22B /* .swiftlint.yml in Resources */,
+				39BD53D12B664D3500ACEFB2 /* Roboto-Regular.ttf in Resources */,
 				39FB8CF82B31D78E004CB22B /* .gitignore in Resources */,
+				39BD53D02B664D3500ACEFB2 /* Roboto-Bold.ttf in Resources */,
 				39FB8D3D2B31E78B004CB22B /* README.md in Resources */,
 				39FB8CF02B31D603004CB22B /* LaunchScreen.storyboard in Resources */,
 				39FB8CED2B31D603004CB22B /* Assets.xcassets in Resources */,
@@ -497,6 +527,7 @@
 				39FB8CE62B31D602004CB22B /* SceneDelegate.swift in Sources */,
 				3938D25F2B477F7F00330094 /* UISetupProtocol.swift in Sources */,
 				394A16B42B3D9D0000875A02 /* ExampleProtocol.swift in Sources */,
+				39BD53C62B664B6B00ACEFB2 /* FontConstant.swift in Sources */,
 				39FDF0222B33EE1300C3C765 /* BaseViewModel.swift in Sources */,
 				39FB8D422B31EEC0004CB22B /* ViewController.swift in Sources */,
 				3951E61A2B3AC98600D1A424 /* MessageView.swift in Sources */,
@@ -507,6 +538,7 @@
 				394A16BA2B3DA38900875A02 /* ViewModel.swift in Sources */,
 				3951E6122B3AC49100D1A424 /* CALayer+Ext.swift in Sources */,
 				394A16AE2B3D99B400875A02 /* InputOutputProtocol.swift in Sources */,
+				39BD53CA2B664C5600ACEFB2 /* UIFont+Ext.swift in Sources */,
 				39FDF02D2B33FF9800C3C765 /* ActivityIndicatorView.swift in Sources */,
 				39FB8D392B31E6B9004CB22B /* Preview.swift in Sources */,
 				394A16B02B3D9C9C00875A02 /* ViewProtocol.swift in Sources */,
