@@ -30,7 +30,7 @@ final class ViewController: BaseViewController {
         .then {
             $0.setAttributedTitle(.init(string: "Touch Me!", 
                                         attributes: [.font: UIFont.custom(.robotoMedium, size: 14)]), for: .normal)
-            $0.backgroundColor = .systemBlue
+            $0.backgroundColor = UIColor.appColor(.primary)
             $0.setTitleColor(.white, for: .normal)
             $0.layer.cornerRadius = 8
         }
