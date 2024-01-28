@@ -16,20 +16,20 @@ final class ViewController: BaseViewController {
         .then {
             $0.text = "9in.team"
             $0.textAlignment = .center
-            $0.font = .custom(.godoB, size: 30) // Font Test
+            $0.font = .appFont(.godoB, size: 30) // Font Test
         }
     
     private let resultLabel = UITextField()
         .then {
             $0.text = "not Tapped"
             $0.textAlignment = .center
-            $0.font = .custom(.robotoBold, size: 14) // Font Test
+            $0.font = .appFont(.robotoBold, size: 14) // Font Test
         }
     
     private let button = UIButton()
         .then {
             $0.setAttributedTitle(.init(string: "Touch Me!", 
-                                        attributes: [.font: UIFont.custom(.robotoMedium, size: 14)]), for: .normal)
+                                        attributes: [.font: UIFont.appFont(.robotoMedium, size: 14)]), for: .normal)
             $0.backgroundColor = UIColor.appColor(.primary)
             $0.setTitleColor(.white, for: .normal)
             $0.layer.cornerRadius = 8
@@ -37,7 +37,7 @@ final class ViewController: BaseViewController {
     
     private let imageView = UIImageView()
         .then {
-            $0.image = UIImage.symbol(.inbox, color: .appColor(.primary))
+            $0.image = UIImage.appSymbol(.inbox, color: .appColor(.primary))
             $0.contentMode = .scaleAspectFit
         }
     

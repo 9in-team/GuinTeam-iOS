@@ -17,8 +17,8 @@ extension UIImage {
     /// SymbolConstant에 정의된 이미지를 가져옵니다.
     /// - Parameters:
     ///     - name: SymbolConstant에 나열된 Symbol을 가져옵니다.
-    ///     - color: Symbol Tint Color를 결정합니다. 
-    static func symbol(_ name: SymbolConstant, color: UIColor = .white) -> UIImage {
+    ///     - color: Symbol Tint Color를 결정합니다.
+    static func appSymbol(_ name: SymbolConstant, color: UIColor = .white) -> UIImage {
         let symbol = UIImage(named: name.rawValue)?.withTintColor(color, renderingMode: .alwaysOriginal)
         return symbol ?? emptyPlaceHolder()
     }
