@@ -35,6 +35,12 @@ final class ViewController: BaseViewController {
             $0.layer.cornerRadius = 8
         }
     
+    private let imageView = UIImageView()
+        .then {
+            $0.image = UIImage.symbol(.inbox, color: .appColor(.primary))
+            $0.contentMode = .scaleAspectFit
+        }
+    
     private let viewModel: ViewModel
     
     // MARK: - Init
@@ -61,14 +67,26 @@ final class ViewController: BaseViewController {
         view.addSubview(label)
         view.addSubview(resultLabel)
         view.addSubview(button)
-
+        view.addSubview(imageView)
+        
         layoutLabel()
         layoutResultLabel()
+        layoutImageView()
         layoutButton()
+    }
+    
+    private func layoutImageView() {
+        imageView.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.height.greaterThanOrEqualTo(40)
+            $0.width.greaterThanOrEqualTo(40)
+        }
+
     }
     
     private func layoutLabel() {
         label.snp.makeConstraints {
+            $0.top.equalTo(imageView.snp.bottom).offset(20)
             $0.center.equalToSuperview()
             $0.height.greaterThanOrEqualTo(40)
             $0.width.greaterThanOrEqualTo(100)
@@ -84,6 +102,7 @@ final class ViewController: BaseViewController {
         }
     }
     
+
     private func layoutButton() {
         button.snp.makeConstraints {
             $0.centerX.equalTo(resultLabel)

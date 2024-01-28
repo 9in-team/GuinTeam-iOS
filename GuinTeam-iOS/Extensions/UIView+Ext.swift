@@ -9,6 +9,7 @@ import UIKit
 
 extension UIView {
     
+    /// View Layer에 Figma shadow를 추가합니다.
     public func shadow(color: UIColor = .black,
                        alpha: Float = 0.25,
                        x: CGFloat = 0,

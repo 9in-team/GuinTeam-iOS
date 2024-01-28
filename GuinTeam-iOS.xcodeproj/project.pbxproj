@@ -28,6 +28,8 @@
 		39BD53D22B664D3500ACEFB2 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39BD53CE2B664D3500ACEFB2 /* Roboto-Medium.ttf */; };
 		39BD53D32B664D3500ACEFB2 /* GodoB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 39BD53CF2B664D3500ACEFB2 /* GodoB.otf */; };
 		39BD53D52B664EF500ACEFB2 /* ColorConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD53D42B664EF500ACEFB2 /* ColorConstant.swift */; };
+		39BD53D72B66666400ACEFB2 /* SymbolConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD53D62B66666400ACEFB2 /* SymbolConstant.swift */; };
+		39BD53D92B666AFE00ACEFB2 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD53D82B666AFE00ACEFB2 /* UIImage+Ext.swift */; };
 		39FB8CE42B31D602004CB22B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8CE32B31D602004CB22B /* AppDelegate.swift */; };
 		39FB8CE62B31D602004CB22B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FB8CE52B31D602004CB22B /* SceneDelegate.swift */; };
 		39FB8CED2B31D603004CB22B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39FB8CEC2B31D603004CB22B /* Assets.xcassets */; };
@@ -99,6 +101,8 @@
 		39BD53CE2B664D3500ACEFB2 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		39BD53CF2B664D3500ACEFB2 /* GodoB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GodoB.otf; sourceTree = "<group>"; };
 		39BD53D42B664EF500ACEFB2 /* ColorConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorConstant.swift; sourceTree = "<group>"; };
+		39BD53D62B66666400ACEFB2 /* SymbolConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolConstant.swift; sourceTree = "<group>"; };
+		39BD53D82B666AFE00ACEFB2 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		39FB8CE02B31D602004CB22B /* GuinTeam-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GuinTeam-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39FB8CE32B31D602004CB22B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39FB8CE52B31D602004CB22B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -278,6 +282,7 @@
 				39FCE2132B3FDF1000927D45 /* AFService.swift */,
 				39BD53C52B664B6B00ACEFB2 /* FontConstant.swift */,
 				39BD53D42B664EF500ACEFB2 /* ColorConstant.swift */,
+				39BD53D62B66666400ACEFB2 /* SymbolConstant.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				3951E6132B3AC4F500D1A424 /* UIView+Ext.swift */,
 				394A16B72B3DA00000875A02 /* UIViewController+Ext.swift */,
 				39BD53C92B664C5600ACEFB2 /* UIFont+Ext.swift */,
+				39BD53D82B666AFE00ACEFB2 /* UIImage+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -543,7 +549,9 @@
 				3951E6122B3AC49100D1A424 /* CALayer+Ext.swift in Sources */,
 				394A16AE2B3D99B400875A02 /* InputOutputProtocol.swift in Sources */,
 				39BD53CA2B664C5600ACEFB2 /* UIFont+Ext.swift in Sources */,
+				39BD53D92B666AFE00ACEFB2 /* UIImage+Ext.swift in Sources */,
 				39FDF02D2B33FF9800C3C765 /* ActivityIndicatorView.swift in Sources */,
+				39BD53D72B66666400ACEFB2 /* SymbolConstant.swift in Sources */,
 				39FB8D392B31E6B9004CB22B /* Preview.swift in Sources */,
 				394A16B02B3D9C9C00875A02 /* ViewProtocol.swift in Sources */,
 				394A16B62B3D9DB500875A02 /* ModelProtocol.swift in Sources */,

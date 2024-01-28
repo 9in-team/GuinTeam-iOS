@@ -25,6 +25,8 @@ enum ColorConstant {
     /// UIColor.background
     case background
     
+    case symbolTint
+    
     func get() -> UIColor {
         
         switch self {
@@ -47,6 +49,9 @@ enum ColorConstant {
             /// UIColor.systemBackground
         case .background:
             return UIColor.systemBackground
+            
+        case .symbolTint:
+            return UIColor(hex: "000000", alpha: 0.6)
         }
         
     }
