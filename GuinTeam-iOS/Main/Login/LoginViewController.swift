@@ -44,6 +44,7 @@ final class LoginViewController: BaseViewController {
         }
     
     private lazy var appleSignInButton = BaseSignInButton(.apple)
+    private lazy var kakaoSignInButton = BaseSignInButton(.kakao)
 
     // MARK: Init
     init(viewModel: LoginViewModel) {
@@ -74,8 +75,9 @@ final class LoginViewController: BaseViewController {
         view.addSubview(titleVStack)
         titleVStack.addArrangedSubview(titleLabel)
         titleVStack.addArrangedSubview(subtitleLabel)
+        view.addSubview(kakaoSignInButton)
         view.addSubview(appleSignInButton)
-        
+
         layoutTitleVStack()
         layoutAppleSignInButton()
     }
@@ -88,12 +90,22 @@ final class LoginViewController: BaseViewController {
     }
     
     private func layoutAppleSignInButton() {
-        appleSignInButton.snp.makeConstraints {
+        
+        // TODO: StackView 사용하기
+        kakaoSignInButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(20)
             $0.height.equalTo(45)
             $0.width.equalTo(300)
         }
+
+        appleSignInButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.bottom.equalTo(kakaoSignInButton.snp.top).offset(-12)
+            $0.height.equalTo(45)
+            $0.width.equalTo(300)
+        }
+
     }
     
     // MARK: Bind
