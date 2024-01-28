@@ -102,7 +102,7 @@ final class ViewController: BaseViewController {
 }
 
 // MARK: - Preview
-#if DEBUG
+#if DEBUG && targetEnvironment(simulator)
 import SwiftUI
 
 struct MainViewController_Previews: PreviewProvider {
