@@ -20,10 +20,10 @@ final class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        homeViewController.setTabBarItem(title: "a", image: UIImage(systemName: "a.circle.fill"))
-        subscribeViewController.setTabBarItem(title: "b", image: UIImage(systemName: "b.circle.fill"))
-        myPostViewController.setTabBarItem(title: "c", image: UIImage(systemName: "c.circle.fill"))
-        mySubmitViewController.setTabBarItem(title: "d", image: UIImage(systemName: "d.circle.fill"))
+        homeViewController.setTabBarItem(title: "홈", image: UIImage(named: SymbolConstant.home.rawValue))
+        subscribeViewController.setTabBarItem(title: "구독", image: UIImage(named: SymbolConstant.inbox.rawValue))
+        myPostViewController.setTabBarItem(title: "내 모집글", image: UIImage(named: SymbolConstant.person2.rawValue))
+        mySubmitViewController.setTabBarItem(title: "내 지원서", image: UIImage(named: SymbolConstant.note.rawValue))
     
         viewControllers = [
             homeViewController,
