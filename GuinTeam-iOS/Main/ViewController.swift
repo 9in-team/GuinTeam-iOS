@@ -14,22 +14,31 @@ final class ViewController: BaseViewController {
     
     private let label = UITextField()
         .then {
-            $0.text = "Hello World!"
+            $0.text = "9in.team"
             $0.textAlignment = .center
+            $0.font = .appFont(.godoB, size: 30) // Font Test
         }
     
     private let resultLabel = UITextField()
         .then {
-            $0.text = ""
+            $0.text = "not Tapped"
             $0.textAlignment = .center
-            $0.font = .systemFont(ofSize: 18, weight: .bold)
+            $0.font = .appFont(.robotoBold, size: 14) // Font Test
         }
     
     private let button = UIButton()
         .then {
-            $0.setTitle("Touch Me!", for: .normal)
-            $0.backgroundColor = .systemBlue
+            $0.setAttributedTitle(.init(string: "Touch Me!", 
+                                        attributes: [.font: UIFont.appFont(.robotoMedium, size: 14)]), for: .normal)
+            $0.backgroundColor = .appColor(.primary)
             $0.setTitleColor(.white, for: .normal)
+            $0.layer.cornerRadius = 8
+        }
+    
+    private let imageView = UIImageView()
+        .then {
+            $0.image = UIImage.appSymbol(.inbox, color: .appColor(.primary))
+            $0.contentMode = .scaleAspectFit
         }
     
     private let viewModel: ViewModel
@@ -58,14 +67,26 @@ final class ViewController: BaseViewController {
         view.addSubview(label)
         view.addSubview(resultLabel)
         view.addSubview(button)
-
+        view.addSubview(imageView)
+        
         layoutLabel()
         layoutResultLabel()
+        layoutImageView()
         layoutButton()
+    }
+    
+    private func layoutImageView() {
+        imageView.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.height.greaterThanOrEqualTo(40)
+            $0.width.greaterThanOrEqualTo(40)
+        }
+
     }
     
     private func layoutLabel() {
         label.snp.makeConstraints {
+            $0.top.equalTo(imageView.snp.bottom).offset(20)
             $0.center.equalToSuperview()
             $0.height.greaterThanOrEqualTo(40)
             $0.width.greaterThanOrEqualTo(100)
@@ -81,6 +102,7 @@ final class ViewController: BaseViewController {
         }
     }
     
+
     private func layoutButton() {
         button.snp.makeConstraints {
             $0.centerX.equalTo(resultLabel)

@@ -31,4 +31,9 @@ extension UIColor {
         
         return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     }
+    
+    /// 앱 전반에서 사용되는 컬러 라이브러리입니다.
+    static func appColor(_ color: ColorConstant) -> UIColor {
+        return color.get()
+    }
 }
