@@ -20,7 +20,6 @@ final class LoginViewModel: BaseViewModel, InputOutputProtocol {
     struct Output {
         let appleSignInRequest: Observable<ASAuthorizationAppleIDRequest>
         let kakaoSignInRequest: Observable<Void>
-
     }
     
     func transform(input: Input) -> Output {

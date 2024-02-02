@@ -20,7 +20,7 @@ final class LoginViewController: BaseViewController {
     private let titleLabel = UILabel()
         .then {
             $0.text = "9in.team"
-            $0.textColor = UIColor(hex: "FFFFFF", alpha: 1)
+            $0.textColor = .appColor(.whiteLabel)
             $0.textAlignment = .center
             $0.font = .appFont(.godoB, size: 48)
             $0.numberOfLines = 1
@@ -29,7 +29,7 @@ final class LoginViewController: BaseViewController {
     private let subtitleLabel = UILabel()
         .then {
             $0.text = "스터디, 프로젝트 같이 할 사람?"
-            $0.textColor = UIColor(hex: "FFFFFF", alpha: 1)
+            $0.textColor = .appColor(.whiteLabel)
             $0.textAlignment = .center
             $0.font = .appFont(.robotoRegular, size: 16)
             $0.numberOfLines = 1
@@ -81,7 +81,7 @@ final class LoginViewController: BaseViewController {
     // MARK: Configure
     override func configure() {
         super.configure()
-        view.backgroundColor = UIColor(hex: "1976D2")
+        view.backgroundColor = .appColor(.main)
     }
     
     // MARK: Layout
