@@ -101,7 +101,6 @@ final class ViewController: BaseViewController {
             $0.width.greaterThanOrEqualTo(100)
         }
     }
-    
 
     private func layoutButton() {
         button.snp.makeConstraints {

@@ -41,8 +41,21 @@ final class LoginViewController: BaseViewController {
             $0.distribution = .fill
             $0.alignment = .fill
             $0.spacing = 4
+            $0.addArrangedSubview(titleLabel)
+            $0.addArrangedSubview(subtitleLabel)
+            
         }
     
+    private lazy var buttonsVStack = UIStackView()
+        .then {
+            $0.axis = .vertical
+            $0.distribution = .fillEqually
+            $0.alignment = .center
+            $0.spacing = 12
+            $0.addArrangedSubview(appleSignInButton)
+            $0.addArrangedSubview(kakaoSignInButton)
+        }
+
     private lazy var appleSignInButton = BaseSignInButton(.apple)
     private lazy var kakaoSignInButton = BaseSignInButton(.kakao)
 
@@ -73,13 +86,10 @@ final class LoginViewController: BaseViewController {
     override func layout() {
         super.layout()
         view.addSubview(titleVStack)
-        titleVStack.addArrangedSubview(titleLabel)
-        titleVStack.addArrangedSubview(subtitleLabel)
-        view.addSubview(kakaoSignInButton)
-        view.addSubview(appleSignInButton)
+        view.addSubview(buttonsVStack)
 
         layoutTitleVStack()
-        layoutAppleSignInButton()
+        layoutSignInButtons()
     }
     
     private func layoutTitleVStack() {
@@ -89,23 +99,19 @@ final class LoginViewController: BaseViewController {
         }
     }
     
-    private func layoutAppleSignInButton() {
+    private func layoutSignInButtons() {
+        [appleSignInButton, kakaoSignInButton]
+            .forEach {
+                $0.snp.makeConstraints {
+                    $0.height.equalTo(45)
+                    $0.width.equalTo(300)
+                }
+            }
         
-        // TODO: StackView 사용하기
-        kakaoSignInButton.snp.makeConstraints {
+        buttonsVStack.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.bottom.equalTo(view.safeAreaLayoutGuide).inset(20)
-            $0.height.equalTo(45)
-            $0.width.equalTo(300)
         }
-
-        appleSignInButton.snp.makeConstraints {
-            $0.centerX.equalToSuperview()
-            $0.bottom.equalTo(kakaoSignInButton.snp.top).offset(-12)
-            $0.height.equalTo(45)
-            $0.width.equalTo(300)
-        }
-
     }
     
     // MARK: Bind
