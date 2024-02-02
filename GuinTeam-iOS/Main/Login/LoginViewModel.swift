@@ -34,6 +34,7 @@ final class LoginViewModel: BaseViewModel, InputOutputProtocol {
         let kakaoSignInRequest = input.kakaoButtonTapped
             .compactMap {
                 print("Kakao Button Tapped")
+                // TODO: HJ - Kakao SDK추가 후 요청 구현.
                 return $0
             }
             .asObservable()

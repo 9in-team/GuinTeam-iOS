@@ -136,12 +136,14 @@ final class LoginViewController: BaseViewController {
         output.kakaoSignInRequest
             .subscribe { _ in
                 print("KakaoSign Request Returned")
+                // TODO: HJ - 로그인 결과 처리
             }
             .disposed(by: disposeBag)
     }
     
 }
 
+// MARK: ASAuthorizationController Delegate / PresentationContextProviding
 extension LoginViewController: ASAuthorizationControllerDelegate,
                                ASAuthorizationControllerPresentationContextProviding {
     
@@ -162,7 +164,9 @@ extension LoginViewController: ASAuthorizationControllerDelegate,
     /// Apple Login 인증 요청
     func authorizationController(controller: ASAuthorizationController,
                                  didCompleteWithAuthorization authorization: ASAuthorization) {
-        print("인증 요청창 Presented")
+        print("애플 인증 요청 Modal Presented")
+        // TODO: HJ - 백엔드 서버에 애플 인증결과 CallBack 요청.
+        // TODO: HJ - 로그인 결과 처리
     }
     
     /// 애플 로그인 오류 처리
