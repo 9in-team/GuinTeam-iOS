@@ -22,7 +22,7 @@ final class ViewModel: BaseViewModel, InputOutputProtocol {
     func transform(input: Input) -> Output {
         let updateResult = input.tapButtonPublisher
             .map { _ in
-                return "Guin-Team!"
+                return "Tapped!!"
             }
             .asDriver(onErrorJustReturn: "ERROR")
         
