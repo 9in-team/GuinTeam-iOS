@@ -13,23 +13,32 @@ import AuthenticationServices
 final class LoginViewModel: BaseViewModel, InputOutputProtocol {
 
     struct Input {
-        let appleSignInButtonTapped: ControlEvent<Void>
+        let appleButtonTapped: Observable<Void>
+        let kakaoButtonTapped: Observable<Void>
     }
     
     struct Output {
-        let appleSignInRequest: Driver<ASAuthorizationAppleIDRequest?>
+        let appleSignInRequest: Observable<ASAuthorizationAppleIDRequest>
+        let kakaoSignInRequest: Observable<Void>
+
     }
     
     func transform(input: Input) -> Output {
         
-        let appleSignInRequest = input
-            .appleSignInButtonTapped
+        let appleSignInRequest = input.appleButtonTapped
             .compactMap { [weak self] _ in
                 return self?.requestAppleSignIn()
             }
-            .asDriver(onErrorJustReturn: nil)
+            .asObservable()
+        
+        let kakaoSignInRequest = input.kakaoButtonTapped
+            .compactMap {
+                print("Kakao Button Tapped")
+                return $0
+            }
+            .asObservable()
 
-        return Output(appleSignInRequest: appleSignInRequest)
+        return Output(appleSignInRequest: appleSignInRequest, kakaoSignInRequest: kakaoSignInRequest)
     }
     
     private func requestAppleSignIn() -> ASAuthorizationAppleIDRequest {

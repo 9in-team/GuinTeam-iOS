@@ -16,13 +16,13 @@ final class LoginViewController: BaseViewController {
     
     private let viewModel: LoginViewModel
     
-    // MARK: Views
+    // MARK: SubViews
     private let titleLabel = UILabel()
         .then {
             $0.text = "9in.team"
             $0.textColor = UIColor(hex: "FFFFFF", alpha: 1)
             $0.textAlignment = .center
-            $0.font = .systemFont(ofSize: 48)
+            $0.font = .appFont(.godoB, size: 48)
             $0.numberOfLines = 1
         }
     
@@ -31,10 +31,15 @@ final class LoginViewController: BaseViewController {
             $0.text = "스터디, 프로젝트 같이 할 사람?"
             $0.textColor = UIColor(hex: "FFFFFF", alpha: 1)
             $0.textAlignment = .center
-            $0.font = .systemFont(ofSize: 16)
+            $0.font = .appFont(.robotoRegular, size: 16)
             $0.numberOfLines = 1
         }
     
+    private lazy var appleSignInButton = BaseSignInButton(.apple)
+    
+    private lazy var kakaoSignInButton = BaseSignInButton(.kakao)
+    
+    // MARK: StackViews
     private lazy var titleVStack = UIStackView()
         .then {
             $0.axis = .vertical
@@ -55,9 +60,6 @@ final class LoginViewController: BaseViewController {
             $0.addArrangedSubview(appleSignInButton)
             $0.addArrangedSubview(kakaoSignInButton)
         }
-
-    private lazy var appleSignInButton = BaseSignInButton(.apple)
-    private lazy var kakaoSignInButton = BaseSignInButton(.kakao)
 
     // MARK: Init
     init(viewModel: LoginViewModel) {
@@ -117,7 +119,8 @@ final class LoginViewController: BaseViewController {
     // MARK: Bind
     override func bind() {
         super.bind()
-        let input = LoginViewModel.Input(appleSignInButtonTapped: appleSignInButton.rx.tap)
+        let input = LoginViewModel.Input(appleButtonTapped: appleSignInButton.rx.tap.asObservable(),
+                                         kakaoButtonTapped: kakaoSignInButton.rx.tap.asObservable())
         let output = viewModel.transform(input: input)
         
         bindAppleSignRequest(output)
@@ -125,9 +128,14 @@ final class LoginViewController: BaseViewController {
     
     private func bindAppleSignRequest(_ output: LoginViewModel.Output) {
         output.appleSignInRequest
-            .drive { [weak self] request in
-                guard let request = request else { return }
+            .subscribe { [weak self] request in
                 self?.appleSignInButtonAction(request: request)
+            }
+            .disposed(by: disposeBag)
+        
+        output.kakaoSignInRequest
+            .subscribe { _ in
+                print("KakaoSign Request Returned")
             }
             .disposed(by: disposeBag)
     }
