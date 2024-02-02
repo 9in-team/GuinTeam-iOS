@@ -47,6 +47,7 @@ enum ColorConstant {
             /// UIColor.systemBackground
         case .background:
             return UIColor.systemBackground
+        }
+        
     }
-    
 }
