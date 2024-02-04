@@ -30,29 +30,13 @@ final class HomeViewController: BaseViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - LifeCycles
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        layout()
-        bind()
-    }
-    
     // MARK: - Setup
     override func layout() {
-        
         super.layout()
-        view.addSubview(label)
-
-        layoutLabel()
+        setNavigationBar()
+        navigationBar.setNavigation(title: "9in.team", rightButtons: [.setting, .chatting])
     }
     
-    private func layoutLabel() {
-        label.snp.makeConstraints {
-            $0.center.equalToSuperview()
-            $0.height.greaterThanOrEqualTo(40)
-            $0.width.greaterThanOrEqualTo(100)
-        }
-    }
     override func bind() {
         super.bind()
         let input = HomeViewModel.Input()
