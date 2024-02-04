@@ -11,6 +11,8 @@ import RxSwift
 
 class BaseViewController: UIViewController, ViewControllerProtocol {
 
+    lazy var navigationBar = NavigationBar(parentViewControlle: self)
+    
     lazy var disposeBag = DisposeBag()
     
     private let messageView = MessageView()
@@ -25,6 +27,9 @@ class BaseViewController: UIViewController, ViewControllerProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         assignTextfieldHideKeyboardGesture()
+        
+        configure()
+        layout()
     }
     
     required init?(coder: NSCoder) {
@@ -32,7 +37,6 @@ class BaseViewController: UIViewController, ViewControllerProtocol {
     }
     
     // MARK: - Configure
-    
     func configure() {
         setBackgroundColor(.systemBackground)
     }
@@ -67,6 +71,15 @@ class BaseViewController: UIViewController, ViewControllerProtocol {
     // MARK: - Observe
     func observe() {
         
+    }
+    
+    // MARK: - Navigation Bar
+    func setNavigationBar() {
+        view.addSubview(navigationBar)
+        navigationBar.snp.makeConstraints {
+            $0.top.leading.trailing.equalToSuperview()
+            $0.height.equalTo(87 + ScreenUtil.safeAreaSize.top)
+        }
     }
     
     // MARK: - Activity Indicator

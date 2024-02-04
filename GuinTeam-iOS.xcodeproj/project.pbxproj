@@ -67,6 +67,10 @@
 		DEA71B852B5EA77100312B47 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B842B5EA77100312B47 /* SubscribeViewController.swift */; };
 		DEA71B872B5EA77C00312B47 /* MyPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B862B5EA77C00312B47 /* MyPostViewController.swift */; };
 		DEA71B892B5EA78600312B47 /* MySubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B882B5EA78600312B47 /* MySubmitViewController.swift */; };
+		DEA71B8C2B67D31500312B47 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B8B2B67D31400312B47 /* NavigationBar.swift */; };
+		DEA71B8E2B67D3A800312B47 /* DefaultNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B8D2B67D3A800312B47 /* DefaultNavigationBar.swift */; };
+		DEA71B902B67D3DC00312B47 /* SegmentNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B8F2B67D3DC00312B47 /* SegmentNavigationBar.swift */; };
+		DEA71B922B6F9EA100312B47 /* ScreenUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B912B6F9EA100312B47 /* ScreenUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +143,10 @@
 		DEA71B842B5EA77100312B47 /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		DEA71B862B5EA77C00312B47 /* MyPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostViewController.swift; sourceTree = "<group>"; };
 		DEA71B882B5EA78600312B47 /* MySubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubmitViewController.swift; sourceTree = "<group>"; };
+		DEA71B8B2B67D31400312B47 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		DEA71B8D2B67D3A800312B47 /* DefaultNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationBar.swift; sourceTree = "<group>"; };
+		DEA71B8F2B67D3DC00312B47 /* SegmentNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNavigationBar.swift; sourceTree = "<group>"; };
+		DEA71B912B6F9EA100312B47 /* ScreenUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +229,7 @@
 		3951E61B2B3AC9B700D1A424 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				DEA71B8A2B67D30900312B47 /* NavigationBar */,
 				3951E6192B3AC98600D1A424 /* MessageView.swift */,
 				39FDF02C2B33FF9800C3C765 /* ActivityIndicatorView.swift */,
 			);
@@ -296,6 +305,7 @@
 				39BD53C52B664B6B00ACEFB2 /* FontConstant.swift */,
 				39BD53D42B664EF500ACEFB2 /* ColorConstant.swift */,
 				39BD53D62B66666400ACEFB2 /* SymbolConstant.swift */,
+				DEA71B912B6F9EA100312B47 /* ScreenUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -402,6 +412,16 @@
 				DEA71B822B5EA71B00312B47 /* MySubmitViewModel.swift */,
 			);
 			path = MySubmit;
+			sourceTree = "<group>";
+		};
+		DEA71B8A2B67D30900312B47 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				DEA71B8B2B67D31400312B47 /* NavigationBar.swift */,
+				DEA71B8D2B67D3A800312B47 /* DefaultNavigationBar.swift */,
+				DEA71B8F2B67D3DC00312B47 /* SegmentNavigationBar.swift */,
+			);
+			path = NavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -590,6 +610,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA71B7B2B5EA6C100312B47 /* HomeViewController.swift in Sources */,
+				DEA71B902B67D3DC00312B47 /* SegmentNavigationBar.swift in Sources */,
 				3951E6102B3AC44500D1A424 /* ScreenIdentifier.swift in Sources */,
 				39FB8CE42B31D602004CB22B /* AppDelegate.swift in Sources */,
 				DEA71B7F2B5EA70C00312B47 /* SubscribeViewModel.swift in Sources */,
@@ -597,8 +618,10 @@
 				3951E6142B3AC4F500D1A424 /* UIView+Ext.swift in Sources */,
 				394A16A82B3D967000875A02 /* ViewControllerProtocol.swift in Sources */,
 				39FB8CE62B31D602004CB22B /* SceneDelegate.swift in Sources */,
+				DEA71B8E2B67D3A800312B47 /* DefaultNavigationBar.swift in Sources */,
 				DEA71B812B5EA71500312B47 /* MyPostViewModel.swift in Sources */,
 				DEA71B852B5EA77100312B47 /* SubscribeViewController.swift in Sources */,
+				DEA71B8C2B67D31500312B47 /* NavigationBar.swift in Sources */,
 				3938D25F2B477F7F00330094 /* UISetupProtocol.swift in Sources */,
 				DEA71B832B5EA71B00312B47 /* MySubmitViewModel.swift in Sources */,
 				394A16B42B3D9D0000875A02 /* ExampleProtocol.swift in Sources */,
@@ -612,10 +635,10 @@
 				39FDF0272B33F06900C3C765 /* BaseView.swift in Sources */,
 				39FCE2142B3FDF1000927D45 /* AFService.swift in Sources */,
 				3951E6092B3AC31700D1A424 /* UIColor+Ext.swift in Sources */,
-				394A16BA2B3DA38900875A02 /* ViewModel.swift in Sources */,
 				39BD53D52B664EF500ACEFB2 /* ColorConstant.swift in Sources */,
 				3951E6122B3AC49100D1A424 /* CALayer+Ext.swift in Sources */,
 				394A16AE2B3D99B400875A02 /* InputOutputProtocol.swift in Sources */,
+				DEA71B922B6F9EA100312B47 /* ScreenUtil.swift in Sources */,
 				39BD53CA2B664C5600ACEFB2 /* UIFont+Ext.swift in Sources */,
 				39BD53D92B666AFE00ACEFB2 /* UIImage+Ext.swift in Sources */,
 				39FDF02D2B33FF9800C3C765 /* ActivityIndicatorView.swift in Sources */,

@@ -12,13 +12,15 @@ import Then
 
 final class MainTabBarController: UITabBarController {
      
-    let homeViewController = HomeViewController(viewModel: HomeViewModel())
-    let subscribeViewController = SubscribeViewController(viewModel: SubscribeViewModel())
-    let myPostViewController = MyPostViewController(viewModel: MyPostViewModel())
-    let mySubmitViewController = MySubmitViewController(viewModel: MySubmitViewModel())
-     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabBar.tintColor = .appColor(.main)
+        tabBar.unselectedItemTintColor = .black.withAlphaComponent(0.6)
+        
+        let homeViewController = makeNavigation(from: HomeViewController(viewModel: HomeViewModel()))
+        let subscribeViewController = makeNavigation(from: SubscribeViewController(viewModel: SubscribeViewModel()))
+        let myPostViewController = makeNavigation(from: MyPostViewController(viewModel: MyPostViewModel()))
+        let mySubmitViewController = makeNavigation(from: MySubmitViewController(viewModel: MySubmitViewModel()))
         
         homeViewController.setTabBarItem(title: "홈", image: .appSymbol(.home))
         subscribeViewController.setTabBarItem(title: "구독", image: .appSymbol(.inbox))
@@ -31,6 +33,10 @@ final class MainTabBarController: UITabBarController {
             myPostViewController,
             mySubmitViewController
         ]
+    }
+    
+    private func makeNavigation(from rootViewController: UIViewController) -> UIViewController {
+        return UINavigationController(rootViewController: rootViewController)
     }
     
 }
