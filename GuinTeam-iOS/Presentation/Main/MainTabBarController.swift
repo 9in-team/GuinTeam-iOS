@@ -15,8 +15,8 @@ final class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.tintColor = .appColor(.main)
-        tabBar.unselectedItemTintColor = .black.withAlphaComponent(0.6)
         
+        tabBar.unselectedItemTintColor = .black.withAlphaComponent(0.6)
         let homeViewController = makeNavigation(from: HomeViewController(viewModel: HomeViewModel()))
         let subscribeViewController = makeNavigation(from: SubscribeViewController(viewModel: SubscribeViewModel()))
         let myPostViewController = makeNavigation(from: MyPostViewController(viewModel: MyPostViewModel()))
