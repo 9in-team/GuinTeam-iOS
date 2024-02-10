@@ -11,7 +11,7 @@ import RxSwift
 
 class BaseViewController: UIViewController, ViewControllerProtocol {
 
-    lazy var navigationBar = NavigationBar(parentViewControlle: self)
+    lazy var navigationBar = NavigationBar(parentViewController: self)
     
     lazy var disposeBag = DisposeBag()
     

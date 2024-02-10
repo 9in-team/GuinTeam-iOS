@@ -8,10 +8,18 @@
 import UIKit
 
 class ScreenUtil {
-            
-    static var safeAreaSize: UIEdgeInsets {
+    
+    static var window: UIWindow? {
         guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
               let window = scene.windows.first else {
+            return nil
+        }
+        
+        return window
+    }
+            
+    static var safeAreaSize: UIEdgeInsets {
+        guard let window = window else {
             return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         }
 
@@ -19,8 +27,7 @@ class ScreenUtil {
     }
 
     static var displaySize: CGSize {
-        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let window = scene.windows.first else {
+        guard let window = window else {
             return CGSize(width: 0, height: 0)
         }
 
@@ -28,8 +35,7 @@ class ScreenUtil {
     }
 
     static var rootViewController: UIViewController? {
-        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
-              let window = scene.windows.first else {
+        guard let window = window else {
             return nil
         }
 

@@ -9,7 +9,7 @@ import UIKit
 
 class NavigationBar: BaseView {
     
-    let parentViewControlle: UIViewController
+    let parentViewController: UIViewController
            
     private let titleStackView = UIStackView().then {
         $0.axis = .horizontal
@@ -34,15 +34,15 @@ class NavigationBar: BaseView {
     }
     
     private var isRoot: Bool {
-        guard let navigationController = parentViewControlle.navigationController else {
+        guard let navigationController = parentViewController.navigationController else {
             return false
         }
         return navigationController.viewControllers.count <= 1
     }
     
     // MARK: - Init
-    init(parentViewControlle: UIViewController) {
-        self.parentViewControlle = parentViewControlle
+    init(parentViewController: UIViewController) {
+        self.parentViewController = parentViewController
         super.init()
     }
     
@@ -54,7 +54,7 @@ class NavigationBar: BaseView {
     func setNavigation(title: String, rightButtons: [NavigationItemType] = []) {
         if !isRoot {
             let button = makeButton(with: .appSymbol(.back), size: 24, action: UIAction { [weak self] _ in
-                self?.parentViewControlle.pop()
+                self?.parentViewController.pop()
             })
             titleStackView.addArrangedSubview(button)
         }
