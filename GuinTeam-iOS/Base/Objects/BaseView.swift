@@ -16,6 +16,9 @@ class BaseView: UIView, ViewProtocol {
     // MARK: - Init
     init() {
         super.init(frame: .zero)
+        
+        configure()
+        layout()
     }
     
     required init?(coder: NSCoder) {

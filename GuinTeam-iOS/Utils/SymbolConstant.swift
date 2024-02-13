@@ -8,6 +8,8 @@
 import Foundation
 
 enum SymbolConstant: String {
+        
+    case back = "back"
     
     case plus = "plus"
     case xmark = "xmark"
