@@ -1,5 +1,12 @@
 # Guin Team iOS
 
+### IA Board Link(Information Architecture) 
+<a href="https://www.notion.so/IA-Information-Architecture-9024980b82b6493fb77cf87b968934da?pvs=4"> 
+<img width="64" src="https://github.com/9in-team/GuinTeam-iOS/assets/60867281/0765cb5a-eb25-49ea-9bc2-dba3f39b5358" alt="구인팀 노션 보드">
+</a>
+
+<br>
+
 ## Project Informations
 #### Architecture
  - MVVM
