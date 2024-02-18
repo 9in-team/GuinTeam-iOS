@@ -18,13 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.backgroundColor = .systemBackground
-        
-        let viewModel = LoginViewModel()
-        let rootVC = LoginViewController(viewModel: viewModel)
+
+        let rootVC = MainTabBarController()
         
         window?.rootViewController = rootVC
-        window?.makeKeyAndVisible()
-        
+        window?.makeKeyAndVisible()        
     }
 
 }
