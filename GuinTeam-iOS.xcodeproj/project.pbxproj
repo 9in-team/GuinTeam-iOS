@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39306ABB2B66B1100071E9DA /* BaseSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39306ABA2B66B1100071E9DA /* BaseSignInButton.swift */; };
 		3938D25F2B477F7F00330094 /* UISetupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3938D25E2B477F7F00330094 /* UISetupProtocol.swift */; };
 		394A16A82B3D967000875A02 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A16A72B3D967000875A02 /* ViewControllerProtocol.swift */; };
 		394A16AC2B3D983300875A02 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394A16AB2B3D983300875A02 /* ViewModelProtocol.swift */; };
@@ -20,6 +21,9 @@
 		3951E6122B3AC49100D1A424 /* CALayer+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E6112B3AC49100D1A424 /* CALayer+Ext.swift */; };
 		3951E6142B3AC4F500D1A424 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E6132B3AC4F500D1A424 /* UIView+Ext.swift */; };
 		3951E61A2B3AC98600D1A424 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E6192B3AC98600D1A424 /* MessageView.swift */; };
+		39AD87162B64FDB400997617 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD87152B64FDB400997617 /* LoginViewController.swift */; };
+		39AD87182B64FDBD00997617 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD87172B64FDBD00997617 /* LoginViewModel.swift */; };
+		39AD871C2B6508C500997617 /* ASAuthorizationAppleIDButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AD871B2B6508C500997617 /* ASAuthorizationAppleIDButton+Ext.swift */; };
 		39BD53C62B664B6B00ACEFB2 /* FontConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD53C52B664B6B00ACEFB2 /* FontConstant.swift */; };
 		39BD53CA2B664C5600ACEFB2 /* UIFont+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD53C92B664C5600ACEFB2 /* UIFont+Ext.swift */; };
 		39BD53D02B664D3500ACEFB2 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39BD53CC2B664D3500ACEFB2 /* Roboto-Bold.ttf */; };
@@ -91,6 +95,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39306AB72B66AF870071E9DA /* GuinTeam-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GuinTeam-iOS.entitlements"; sourceTree = "<group>"; };
+		39306ABA2B66B1100071E9DA /* BaseSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSignInButton.swift; sourceTree = "<group>"; };
 		3938D25E2B477F7F00330094 /* UISetupProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISetupProtocol.swift; sourceTree = "<group>"; };
 		394A16A72B3D967000875A02 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
 		394A16AB2B3D983300875A02 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 		3951E6112B3AC49100D1A424 /* CALayer+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Ext.swift"; sourceTree = "<group>"; };
 		3951E6132B3AC4F500D1A424 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		3951E6192B3AC98600D1A424 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		39AD87152B64FDB400997617 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		39AD87172B64FDBD00997617 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		39AD871B2B6508C500997617 /* ASAuthorizationAppleIDButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ASAuthorizationAppleIDButton+Ext.swift"; sourceTree = "<group>"; };
 		39BD53C52B664B6B00ACEFB2 /* FontConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontConstant.swift; sourceTree = "<group>"; };
 		39BD53C92B664C5600ACEFB2 /* UIFont+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Ext.swift"; sourceTree = "<group>"; };
 		39BD53CC2B664D3500ACEFB2 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
@@ -236,6 +245,17 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
+		39AD87142B64FDA700997617 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				39AD87152B64FDB400997617 /* LoginViewController.swift */,
+				39AD87172B64FDBD00997617 /* LoginViewModel.swift */,
+				39306ABA2B66B1100071E9DA /* BaseSignInButton.swift */,
+			);
+			path = Login;
+               sourceTree = "<group>";
+        };
+
 		39BD53CB2B664CCE00ACEFB2 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +294,7 @@
 		39FB8CE22B31D602004CB22B /* GuinTeam-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				39306AB72B66AF870071E9DA /* GuinTeam-iOS.entitlements */,
 				39FB8CE32B31D602004CB22B /* AppDelegate.swift */,
 				39FB8CE52B31D602004CB22B /* SceneDelegate.swift */,
 				39FB8D2D2B31E4DB004CB22B /* Presentation */,
@@ -291,6 +312,9 @@
 		39FB8D2D2B31E4DB004CB22B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				39AD87142B64FDA700997617 /* Login */,
+				39FB8D412B31EEC0004CB22B /* ViewController.swift */,
+				394A16B92B3DA38900875A02 /* ViewModel.swift */,
 				DEA71B702B5E99F800312B47 /* Main */,
 				3951E61B2B3AC9B700D1A424 /* CustomViews */,
 			);
@@ -317,6 +341,7 @@
 				3951E6112B3AC49100D1A424 /* CALayer+Ext.swift */,
 				3951E6132B3AC4F500D1A424 /* UIView+Ext.swift */,
 				394A16B72B3DA00000875A02 /* UIViewController+Ext.swift */,
+				39AD871B2B6508C500997617 /* ASAuthorizationAppleIDButton+Ext.swift */,
 				39BD53C92B664C5600ACEFB2 /* UIFont+Ext.swift */,
 				39BD53D82B666AFE00ACEFB2 /* UIImage+Ext.swift */,
 			);
@@ -631,6 +656,9 @@
 				3951E61A2B3AC98600D1A424 /* MessageView.swift in Sources */,
 				DEA71B892B5EA78600312B47 /* MySubmitViewController.swift in Sources */,
 				39FDF01E2B33EC1400C3C765 /* BaseViewController.swift in Sources */,
+				39AD87162B64FDB400997617 /* LoginViewController.swift in Sources */,
+				39306ABB2B66B1100071E9DA /* BaseSignInButton.swift in Sources */,
+				39AD87182B64FDBD00997617 /* LoginViewModel.swift in Sources */,
 				DEA71B872B5EA77C00312B47 /* MyPostViewController.swift in Sources */,
 				39FDF0272B33F06900C3C765 /* BaseView.swift in Sources */,
 				39FCE2142B3FDF1000927D45 /* AFService.swift in Sources */,
@@ -648,6 +676,7 @@
 				394A16B02B3D9C9C00875A02 /* ViewProtocol.swift in Sources */,
 				394A16B62B3D9DB500875A02 /* ModelProtocol.swift in Sources */,
 				394A16AC2B3D983300875A02 /* ViewModelProtocol.swift in Sources */,
+				39AD871C2B6508C500997617 /* ASAuthorizationAppleIDButton+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,6 +853,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "GuinTeam-iOS/GuinTeam-iOS.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -861,6 +891,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "GuinTeam-iOS/GuinTeam-iOS.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;

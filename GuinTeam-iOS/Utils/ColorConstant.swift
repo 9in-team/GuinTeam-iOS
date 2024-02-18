@@ -25,6 +25,10 @@ enum ColorConstant {
     /// UIColor.background
     case background
     
+    /// White Text용 Color
+    /// - FFFFFF
+    case whiteLabel
+    
     func get() -> UIColor {
         
         switch self {
@@ -42,6 +46,8 @@ enum ColorConstant {
             /// UIColor.tertiaryLabel
         case .tertiaryLabel:
             return UIColor.tertiaryLabel
+        case .whiteLabel:
+            return UIColor(hex: "FFFFFF", alpha: 1.0)
             
             // MARK: Background
             /// UIColor.systemBackground
@@ -49,5 +55,4 @@ enum ColorConstant {
             return UIColor.systemBackground
         }
     }
-    
 }

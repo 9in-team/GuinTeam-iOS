@@ -101,7 +101,6 @@ final class ViewController: BaseViewController {
             $0.width.greaterThanOrEqualTo(100)
         }
     }
-    
 
     private func layoutButton() {
         button.snp.makeConstraints {
@@ -124,7 +123,7 @@ final class ViewController: BaseViewController {
 }
 
 // MARK: - Preview
-#if DEBUG
+#if DEBUG && targetEnvironment(simulator)
 import SwiftUI
 
 struct MainViewController_Previews: PreviewProvider {
