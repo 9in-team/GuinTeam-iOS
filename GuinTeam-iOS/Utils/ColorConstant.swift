@@ -16,6 +16,8 @@ enum ColorConstant {
     /// - tint/secondary
     /// - 42A5F5
     case secondary
+    /// 000000, 0.86
+    case titleLabel
     /// UIColor.label
     case label
     /// UIColor.secondaryLabel
@@ -35,16 +37,17 @@ enum ColorConstant {
         case .secondary:
             return UIColor(hex: "42A5F5", alpha: 1.0)
             
+            // MARK: - Label
+        case .titleLabel:
+            return UIColor(hex: "000000", alpha: 0.87)
         case .label:
             return UIColor.label
         case .secondaryLabel:
             return UIColor.secondaryLabel
-            /// UIColor.tertiaryLabel
         case .tertiaryLabel:
             return UIColor.tertiaryLabel
             
             // MARK: Background
-            /// UIColor.systemBackground
         case .background:
             return UIColor.systemBackground
         }

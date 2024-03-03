@@ -59,6 +59,7 @@
 		39FDF0222B33EE1300C3C765 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0212B33EE1300C3C765 /* BaseViewModel.swift */; };
 		39FDF0272B33F06900C3C765 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF0262B33F06900C3C765 /* BaseView.swift */; };
 		39FDF02D2B33FF9800C3C765 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FDF02C2B33FF9800C3C765 /* ActivityIndicatorView.swift */; };
+		DEA0E4C22B91CCEE00C663E0 /* UICollectionView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA0E4C12B91CCEE00C663E0 /* UICollectionView+Ext.swift */; };
 		DEA71B7B2B5EA6C100312B47 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B7A2B5EA6C100312B47 /* HomeViewController.swift */; };
 		DEA71B7D2B5EA6D800312B47 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B7C2B5EA6D800312B47 /* HomeViewModel.swift */; };
 		DEA71B7F2B5EA70C00312B47 /* SubscribeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B7E2B5EA70C00312B47 /* SubscribeViewModel.swift */; };
@@ -71,6 +72,14 @@
 		DEA71B8E2B67D3A800312B47 /* DefaultNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B8D2B67D3A800312B47 /* DefaultNavigationBar.swift */; };
 		DEA71B902B67D3DC00312B47 /* SegmentNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B8F2B67D3DC00312B47 /* SegmentNavigationBar.swift */; };
 		DEA71B922B6F9EA100312B47 /* ScreenUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B912B6F9EA100312B47 /* ScreenUtil.swift */; };
+		DEA71B952B80982F00312B47 /* TeamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B942B80982F00312B47 /* TeamCollectionViewCell.swift */; };
+		DEA71B992B809DFC00312B47 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B982B809DFC00312B47 /* TagView.swift */; };
+		DEA71B9B2B80ADCD00312B47 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B9A2B80ADCD00312B47 /* UITableView+Ext.swift */; };
+		DEA71B9E2B80B30900312B47 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B9D2B80B30900312B47 /* Team.swift */; };
+		DEA71BA02B80B31C00312B47 /* SubmissionForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71B9F2B80B31C00312B47 /* SubmissionForm.swift */; };
+		DEA71BA22B80B36300312B47 /* HashTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71BA12B80B36300312B47 /* HashTag.swift */; };
+		DEA71BA62B80B3DA00312B47 /* RecruitmentRole.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71BA52B80B3DA00312B47 /* RecruitmentRole.swift */; };
+		DEA71BA82B80B41900312B47 /* SubjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA71BA72B80B41900312B47 /* SubjectType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +144,7 @@
 		39FDF0212B33EE1300C3C765 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		39FDF0262B33F06900C3C765 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		39FDF02C2B33FF9800C3C765 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		DEA0E4C12B91CCEE00C663E0 /* UICollectionView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Ext.swift"; sourceTree = "<group>"; };
 		DEA71B7A2B5EA6C100312B47 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DEA71B7C2B5EA6D800312B47 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		DEA71B7E2B5EA70C00312B47 /* SubscribeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewModel.swift; sourceTree = "<group>"; };
@@ -147,6 +157,14 @@
 		DEA71B8D2B67D3A800312B47 /* DefaultNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNavigationBar.swift; sourceTree = "<group>"; };
 		DEA71B8F2B67D3DC00312B47 /* SegmentNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentNavigationBar.swift; sourceTree = "<group>"; };
 		DEA71B912B6F9EA100312B47 /* ScreenUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenUtil.swift; sourceTree = "<group>"; };
+		DEA71B942B80982F00312B47 /* TeamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEA71B982B809DFC00312B47 /* TagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		DEA71B9A2B80ADCD00312B47 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		DEA71B9D2B80B30900312B47 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		DEA71B9F2B80B31C00312B47 /* SubmissionForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionForm.swift; sourceTree = "<group>"; };
+		DEA71BA12B80B36300312B47 /* HashTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTag.swift; sourceTree = "<group>"; };
+		DEA71BA52B80B3DA00312B47 /* RecruitmentRole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecruitmentRole.swift; sourceTree = "<group>"; };
+		DEA71BA72B80B41900312B47 /* SubjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,8 +248,10 @@
 			isa = PBXGroup;
 			children = (
 				DEA71B8A2B67D30900312B47 /* NavigationBar */,
+				DEA71B932B80980900312B47 /* TableViewCell */,
 				3951E6192B3AC98600D1A424 /* MessageView.swift */,
 				39FDF02C2B33FF9800C3C765 /* ActivityIndicatorView.swift */,
+				DEA71B982B809DFC00312B47 /* TagView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -278,6 +298,7 @@
 				39FB8CE52B31D602004CB22B /* SceneDelegate.swift */,
 				39FB8D2D2B31E4DB004CB22B /* Presentation */,
 				39FDF01A2B33EA9800C3C765 /* Base */,
+				DEA71B9C2B80B2FF00312B47 /* Model */,
 				39FB8D2E2B31E4E4004CB22B /* Utils */,
 				3951E60A2B3AC36200D1A424 /* Test */,
 				39FB8D2F2B31E4EE004CB22B /* Extensions */,
@@ -319,6 +340,8 @@
 				394A16B72B3DA00000875A02 /* UIViewController+Ext.swift */,
 				39BD53C92B664C5600ACEFB2 /* UIFont+Ext.swift */,
 				39BD53D82B666AFE00ACEFB2 /* UIImage+Ext.swift */,
+				DEA71B9A2B80ADCD00312B47 /* UITableView+Ext.swift */,
+				DEA0E4C12B91CCEE00C663E0 /* UICollectionView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -422,6 +445,34 @@
 				DEA71B8F2B67D3DC00312B47 /* SegmentNavigationBar.swift */,
 			);
 			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		DEA71B932B80980900312B47 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DEA71B942B80982F00312B47 /* TeamCollectionViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		DEA71B9C2B80B2FF00312B47 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEA71BA32B80B3BB00312B47 /* Team */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEA71BA32B80B3BB00312B47 /* Team */ = {
+			isa = PBXGroup;
+			children = (
+				DEA71B9D2B80B30900312B47 /* Team.swift */,
+				DEA71B9F2B80B31C00312B47 /* SubmissionForm.swift */,
+				DEA71BA12B80B36300312B47 /* HashTag.swift */,
+				DEA71BA52B80B3DA00312B47 /* RecruitmentRole.swift */,
+				DEA71BA72B80B41900312B47 /* SubjectType.swift */,
+			);
+			path = Team;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -613,6 +664,7 @@
 				DEA71B902B67D3DC00312B47 /* SegmentNavigationBar.swift in Sources */,
 				3951E6102B3AC44500D1A424 /* ScreenIdentifier.swift in Sources */,
 				39FB8CE42B31D602004CB22B /* AppDelegate.swift in Sources */,
+				DEA71BA82B80B41900312B47 /* SubjectType.swift in Sources */,
 				DEA71B7F2B5EA70C00312B47 /* SubscribeViewModel.swift in Sources */,
 				394A16B82B3DA00000875A02 /* UIViewController+Ext.swift in Sources */,
 				3951E6142B3AC4F500D1A424 /* UIView+Ext.swift in Sources */,
@@ -620,7 +672,9 @@
 				39FB8CE62B31D602004CB22B /* SceneDelegate.swift in Sources */,
 				DEA71B8E2B67D3A800312B47 /* DefaultNavigationBar.swift in Sources */,
 				DEA71B812B5EA71500312B47 /* MyPostViewModel.swift in Sources */,
+				DEA71BA02B80B31C00312B47 /* SubmissionForm.swift in Sources */,
 				DEA71B852B5EA77100312B47 /* SubscribeViewController.swift in Sources */,
+				DEA71BA22B80B36300312B47 /* HashTag.swift in Sources */,
 				DEA71B8C2B67D31500312B47 /* NavigationBar.swift in Sources */,
 				3938D25F2B477F7F00330094 /* UISetupProtocol.swift in Sources */,
 				DEA71B832B5EA71B00312B47 /* MySubmitViewModel.swift in Sources */,
@@ -628,14 +682,17 @@
 				39BD53C62B664B6B00ACEFB2 /* FontConstant.swift in Sources */,
 				39FDF0222B33EE1300C3C765 /* BaseViewModel.swift in Sources */,
 				39FB8D422B31EEC0004CB22B /* MainTabBarController.swift in Sources */,
+				DEA0E4C22B91CCEE00C663E0 /* UICollectionView+Ext.swift in Sources */,
 				3951E61A2B3AC98600D1A424 /* MessageView.swift in Sources */,
 				DEA71B892B5EA78600312B47 /* MySubmitViewController.swift in Sources */,
 				39FDF01E2B33EC1400C3C765 /* BaseViewController.swift in Sources */,
+				DEA71B9E2B80B30900312B47 /* Team.swift in Sources */,
 				DEA71B872B5EA77C00312B47 /* MyPostViewController.swift in Sources */,
 				39FDF0272B33F06900C3C765 /* BaseView.swift in Sources */,
 				39FCE2142B3FDF1000927D45 /* AFService.swift in Sources */,
 				3951E6092B3AC31700D1A424 /* UIColor+Ext.swift in Sources */,
 				39BD53D52B664EF500ACEFB2 /* ColorConstant.swift in Sources */,
+				DEA71BA62B80B3DA00312B47 /* RecruitmentRole.swift in Sources */,
 				3951E6122B3AC49100D1A424 /* CALayer+Ext.swift in Sources */,
 				394A16AE2B3D99B400875A02 /* InputOutputProtocol.swift in Sources */,
 				DEA71B922B6F9EA100312B47 /* ScreenUtil.swift in Sources */,
@@ -643,9 +700,12 @@
 				39BD53D92B666AFE00ACEFB2 /* UIImage+Ext.swift in Sources */,
 				39FDF02D2B33FF9800C3C765 /* ActivityIndicatorView.swift in Sources */,
 				DEA71B7D2B5EA6D800312B47 /* HomeViewModel.swift in Sources */,
+				DEA71B992B809DFC00312B47 /* TagView.swift in Sources */,
 				39BD53D72B66666400ACEFB2 /* SymbolConstant.swift in Sources */,
 				39FB8D392B31E6B9004CB22B /* Preview.swift in Sources */,
+				DEA71B952B80982F00312B47 /* TeamCollectionViewCell.swift in Sources */,
 				394A16B02B3D9C9C00875A02 /* ViewProtocol.swift in Sources */,
+				DEA71B9B2B80ADCD00312B47 /* UITableView+Ext.swift in Sources */,
 				394A16B62B3D9DB500875A02 /* ModelProtocol.swift in Sources */,
 				394A16AC2B3D983300875A02 /* ViewModelProtocol.swift in Sources */,
 			);

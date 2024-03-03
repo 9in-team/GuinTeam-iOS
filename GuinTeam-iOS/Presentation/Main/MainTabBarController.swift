@@ -36,6 +36,7 @@ final class MainTabBarController: UITabBarController {
     }
     
     private func makeNavigation(from rootViewController: UIViewController) -> UIViewController {
+        rootViewController.edgesForExtendedLayout = [.top]
         return UINavigationController(rootViewController: rootViewController)
     }
     
